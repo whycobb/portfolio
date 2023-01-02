@@ -29,6 +29,8 @@ def createRecord():
 	return(create)
 
 if len(sys.argv)>2: #at least the config and root domain is specified
+    print("DNSupdate.py executing...")
+
 	apiConfig = json.load(open(sys.argv[1])) #load the config file into a variable
 	rootDomain=sys.argv[2].lower()
 		
@@ -45,9 +47,30 @@ if len(sys.argv)>2: #at least the config and root domain is specified
 		myIP=sys.argv[5]
 	else:
 		myIP=getMyIP() #otherwise use the detected exterior IP address
+        print("New IP is: " + myIP)
+        
+    oldIP = "0.0.0.0"
+    try:
+        log = open("oldIP.log", "r")
+        oldIP = log.read()
+        log.close()
+    except IOError:
+        print ("Error: oldIP.log does not exist.")
+        
+        
+    if myIP == oldIP:
+        print("IP Addresses match")
+    else:
+        print("IP Addresses differ. Updating...")
+        
+        log = open("oldIP.log", "w")
+        log.write(str(myIP))
+        log.close()
+        
+        updateDNS()
 	
-	deleteRecord()
-	print(createRecord()["status"])
+        deleteRecord()
+        print(createRecord()["status"])
 	
 else:
 	print("Porkbun Dynamic DNS client, Python Edition\n\nError: not enough arguments. Examples:\npython porkbun-ddns.py /path/to/config.json example.com\npython porkbun-ddns.py /path/to/config.json example.com www\npython porkbun-ddns.py /path/to/config.json example.com '*'\npython porkbun-ddns.py /path/to/config.json example.com -i 10.0.0.1\n")
