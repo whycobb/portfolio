@@ -66,8 +66,6 @@ if len(sys.argv)>2: #at least the config and root domain is specified
 		log = open("oldIP.log", "w")
 		log.write(str(myIP))
 		log.close()
-		
-		updateDNS()
 	
 		deleteRecord()
 		print(createRecord()["status"])
