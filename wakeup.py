@@ -26,8 +26,7 @@ except IOError:
     print ("Error: oldIP.log does not exist.")
 
 
-#newIP = urllib.request.urlopen('https://ident.me').read().decode('utf8')
-newIP = getMyIP()
+newIP = urllib.request.urlopen('https://ident.me').read().decode('utf8')
 print(newIP)
 
 print("New IP:\t" + newIP)
