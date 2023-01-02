@@ -8,5 +8,5 @@ js/three.js-master/
 Pages/GISTest/
 
 #ignore config to hide logins/keys
-pb_config.json
+/pb_keys.json
 
