@@ -1,0 +1,5 @@
+#Check service status:
+sudo systemctl status serverlaunch.service
+
+#edit systemd script:
+sudo nano /lib/systemd/system/serverlaunch.service
