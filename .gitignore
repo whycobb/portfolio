@@ -1,0 +1,12 @@
+#ignore ALL .log giles
+*.log
+
+#ignore THREE folder
+js/three.js-master/
+
+#ignore libraries in GISTest
+Pages/GISTest/
+
+#ignore config to hide logins/keys
+pb_config.json
+
