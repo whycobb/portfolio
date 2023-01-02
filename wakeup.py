@@ -42,10 +42,7 @@ else:
     log.close()
     
     updateDNS()
-    
-    
 
-input('finished')
 
 
 
