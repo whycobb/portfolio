@@ -6,6 +6,7 @@ js/three.js-master/
 
 #ignore libraries in GISTest
 Pages/GISTest/
+Pages/Asteroids/
 
 #ignore config to hide logins/keys
 /pb_keys.json
