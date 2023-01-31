@@ -29,7 +29,7 @@ body {
 	}
 }
 
-@supports not (background-attachment: fixed) {
+@supports (-webkit-overflow-scrolling: touch) {	/* Apple wtf are you doing */
 	body {
 		background: linear-gradient(45deg, #1262B3, #4DA6FF, #1262B3, #4DA6FF, #1262B3, #4DA6FF, #1262B3, #4DA6FF, #1262B3, #4DA6FF, #1262B3, #4DA6FF, #1262B3);
 	}
