@@ -8,10 +8,6 @@ body {
   margin: 0px;
 	
 	background-color: #4DA6FF;
-	background: linear-gradient(45deg, #1262B3, #4DA6FF, #1262B3);
-	background-size: 200% 200%;
-	background-attachment: fixed;
-	animation: gradient 15s ease infinite;
 	height: 100vh;
 	
 }
@@ -29,9 +25,12 @@ body {
 	}
 }
 
-@supports (-webkit-overflow-scrolling: touch) {	/* iOS lies about supporting background-attachment and I would like to see Apple answer for this sin */
+@supports not (-webkit-overflow-scrolling: touch) {	/* iOS lies about supporting background-attachment and I would like to see Apple answer for this sin */
 	body {
-		background: linear-gradient(45deg, #1262B3, #4DA6FF, #1262B3, #4DA6FF, #1262B3, #4DA6FF, #1262B3, #4DA6FF, #1262B3, #4DA6FF, #1262B3, #4DA6FF, #1262B3);
+		background: linear-gradient(45deg, #1262B3, #4DA6FF, #1262B3);
+		background-size: 200% 200%;
+		background-attachment: fixed;
+		animation: gradient 15s ease infinite;
 	}
 }
 
