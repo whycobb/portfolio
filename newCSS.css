@@ -123,7 +123,7 @@ a:visited {
 div.sticky {
  /* align-items: center;*/
 
-	box-shadow: 0 5px 5px #1262B3;
+	box-shadow: 0 6px 5px #1262B380;
 	border-radius: 0px 0px 15px 15px;
 
   position: -webkit-sticky;
@@ -141,12 +141,12 @@ div.top-bar-category {
   /* background-color: #cc5577; */
   padding: 10px;
   font-size: 15pt;
-	text-shadow: 0px 0px 1px #FFFFFF;
+	text-shadow: 0px 0px 1px #FFFFFF, 0px 1px 3px #000000;
 	z-index: 10;
 }
 
 div.top-bar-category:hover {
-	text-shadow: 0px 0px 6px #FFFFFF;
+	text-shadow: 0px 0px 6px #FFFFFF, 0px 3px 5px #000000;
 }
 
 div.art-links {
