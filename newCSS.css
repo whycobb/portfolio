@@ -8,7 +8,7 @@ body {
   margin: 0px;
 	
 	background-color: #4DA6FF;
-	background: linear-gradient(45deg, #1262B3, #4DA6FF, #1262B3);
+	background: linear-gradient(45deg, #1262B3, #4DA6FF, #1262B3, #4DA6FF, #1262B3, #4DA6FF, #1262B3, #4DA6FF, #1262B3, #4DA6FF, #1262B3);
 	background-size: 150% 150%;
 	background-attachment: fixed;
 	-webkit-background-size: cover;
