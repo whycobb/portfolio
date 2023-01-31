@@ -51,6 +51,11 @@ a:hover {
 	opacity: 1;
 }
 
+a:visited {
+  text-decoration: none;
+	color: white;
+}
+
 .rel-container {
   height: 100%;
   width: 100%;
