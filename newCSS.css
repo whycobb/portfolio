@@ -58,11 +58,14 @@ a:hover {
 }
 
 .rel-header {
-  justify-content: center;
-  display: flex;
-  flex-direction: row-reverse;
+  /* height: 5rem; */
+  /* justify-content: center; */
+  /* display: flex; */
+  /* flex-direction: row-reverse; */
+  background-color: #3299FF;
   position: relative;
-  height: 100%;
+  font-size: 25px;
+  /* height: 100%; */
   width: 100%;
 }
 
@@ -107,7 +110,7 @@ a:hover {
 div.sticky {
  /* align-items: center;*/
 
-	box-shadow: 0 0 10px #1262B3;
+	box-shadow: 0 5px 5px #1262B3;
 	border-radius: 0px 0px 15px 15px;
 
   position: -webkit-sticky;
@@ -148,6 +151,12 @@ div.art-links {
 
 div.text-body {
 	margin: auto;
+	margin-top: 1%;
+	width: 70%;
+	padding-left: 3.5%;
+	padding-right: 3.5%;
+  border-radius: 14px;
+	background-color: #00000020;
 }
 
 p {
@@ -158,6 +167,6 @@ p {
 	text-justify: auto;
 	margin-left: auto;
 	margin-right: auto;
-	width: 70%;
+	/* width: 70%; */
 	line-height: 1.2;
 }
