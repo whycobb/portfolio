@@ -11,6 +11,7 @@ body {
 	background: linear-gradient(45deg, #1262B3, #4DA6FF, #1262B3, #4DA6FF, #1262B3, #4DA6FF, #1262B3, #4DA6FF, #1262B3, #4DA6FF, #1262B3);
 	background-size: 150% 150%;
 	background-attachment: fixed;
+	position: absolute;
 	-webkit-background-size: cover;
 	animation: gradient 5s ease infinite;
 	height: 100vh;
