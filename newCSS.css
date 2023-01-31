@@ -126,7 +126,7 @@ div.top-bar-category {
   top: 0;
   /* background-color: #cc5577; */
   padding: 10px;
-  font-size: 25px;
+  font-size: 17pt;
 	text-shadow: 0px 0px 1px #FFFFFF;
 	z-index: 10;
 }
@@ -153,7 +153,7 @@ div.text-body {
 p {
   font-family: verdana;
 	color: white;
-  font-size: 20px;
+  font-size: 15pt;
 	text-align: justify;
 	text-justify: auto;
 	margin-left: auto;
