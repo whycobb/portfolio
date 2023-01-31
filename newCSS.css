@@ -8,16 +8,12 @@ body {
   margin: 0px;
 	
 	background-color: #4DA6FF;
-	background: linear-gradient(45deg, #1262B3, #4DA6FF, #1262B3, #4DA6FF, #1262B3, #4DA6FF, #1262B3, #4DA6FF, #1262B3, #4DA6FF, #1262B3);
-	background-size: 150% 150%;
+	background: linear-gradient(45deg, #1262B3, #4DA6FF, #1262B3);
+	background-size: 200% 200%;
 	background-attachment: fixed;
-	position: absolute;
-	-webkit-background-size: cover;
-	animation: gradient 5s ease infinite;
+	animation: gradient 15s ease infinite;
 	height: 100vh;
 	
-	
-
 }
 @keyframes gradient {
 	0% {
@@ -30,6 +26,12 @@ body {
 	
 	100% {
 		background-position: 0% 50%;
+	}
+}
+
+@supports (background-attachment: fixed) {
+	body {
+		background: linear-gradient(45deg, #1262B3, #4DA6FF, #1262B3, #4DA6FF, #1262B3, #4DA6FF, #1262B3, #4DA6FF, #1262B3, #4DA6FF, #1262B3, #4DA6FF, #1262B3);
 	}
 }
 
