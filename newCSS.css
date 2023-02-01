@@ -168,6 +168,10 @@ div.text-body {
 	padding-right: 3.5%;
   border-radius: 14px;
 	background-color: #00000020;
+	
+	outline-style:double;
+	outline-color:#ffffff40;
+	outline-width:5px;
 }
 
 p {
