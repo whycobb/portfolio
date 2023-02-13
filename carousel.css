@@ -6,12 +6,14 @@
 .carousel-holder {
   border-radius: 14px 14px 0 0;
 	overflow: hidden;
-  width: 110%;
+  width: calc(100% + 7vw);
   position: relative;
   left: 50%;
   right: 50%;
-  margin-left: -55%;
-  margin-right: -45%;
+  /* margin-left: -56.5%; */
+  /* margin-right: -43.5%; */
+  margin-left: calc(-50% - 3.5vw);
+  margin-right: calc(-50% + 3.5vw);
 }
 
 img {
