@@ -18,6 +18,9 @@ body::-webkit-scrollbar {
   display: none;
 }
 
+html {
+  scrollbar-width: none;  /* Firefox */
+}
 
 @keyframes gradient {
 	0% {
