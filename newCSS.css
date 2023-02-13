@@ -9,6 +9,7 @@ body {
 	background-color: #4DA6FF;
 	height: 150%;
 	
+	
 }
 @keyframes gradient {
 	0% {
@@ -132,6 +133,7 @@ div.sticky {
   height: 3rem;
   top: 0;
   background-color: #3299FF;
+	z-index: 9;
 }
 
 div.top-bar-category {

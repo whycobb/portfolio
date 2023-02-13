@@ -4,7 +4,7 @@
 
 /* Position the image container (needed to position the left and right arrows) */
 .carousel-holder {
-  border-radius: 14px;
+  border-radius: 14px 14px 0 0;
 	overflow: hidden;
   width: 110%;
   position: relative;
@@ -14,9 +14,14 @@
   margin-right: -45%;
 }
 
+img {
+	display: block;
+}
+
 /* Hide the images by default */
 .carousel-slide {
-	z-index: 2;
+	display: block;
+	height: 100%;
 	box-sizing: border-box;
   margin: 0;
 	padding-bottom: 0;
@@ -40,7 +45,7 @@
   color: #ffffff80;
   font-weight: bold;
   font-size: 40px;
-  border-radius: 0 3px 3px 0;
+  border-radius: 0 15px 15px 0;
   user-select: none;
   -webkit-user-select: none;
 }
@@ -48,7 +53,7 @@
 /* Position the "next button" to the right */
 .next {
   right: 0;
-  border-radius: 3px 0 0 3px;
+  border-radius: 15px 0 0 15px;
 }
 
 /* On hover, add a black background color with a little bit see-through */
@@ -84,19 +89,28 @@
 /* Six columns side by side */
 .thumbnail {
 	box-sizing: border-box;
+	display:block;
   margin: 0;
 	display: block;
   float: left;
   width: 16.666666%;
+	height: 100%;
+	min-height:100%;
 	/* background-color:#0000ff; */
 }
 
 /* Add a transparency effect for thumnbail images */
 .demo {
-  opacity: 0.6;
+  -webkit-filter: grayscale(100%);
+	-moz-filter:    grayscale(100%);
+	-ms-filter:     grayscale(100%);
+	-o-filter:      grayscale(100%);
 }
 
 .active,
 .demo:hover {
-  opacity: 1;
+  -webkit-filter: grayscale(0%);
+	-moz-filter:    grayscale(0%);
+	-ms-filter:     grayscale(0%);
+	-o-filter:      grayscale(0%);
 }
