@@ -1,4 +1,4 @@
-body {
+html, body {
 
   /* background-color: #cc5577; */
   /* background-attachment: fixed; */
@@ -9,8 +9,17 @@ body {
 	background-color: #4DA6FF;
 	height: 150%;
 	
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+	overflow-y: scroll;
 	
 }
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+
 @keyframes gradient {
 	0% {
 		background-position: 0% 50%;
