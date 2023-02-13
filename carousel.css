@@ -1,0 +1,102 @@
+/* * { */
+  /* box-sizing: border-box; */
+/* } */
+
+/* Position the image container (needed to position the left and right arrows) */
+.carousel-holder {
+  border-radius: 14px;
+	overflow: hidden;
+  width: 110%;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -55%;
+  margin-right: -45%;
+}
+
+/* Hide the images by default */
+.carousel-slide {
+	box-sizing: border-box;
+  margin: 0;
+  display: block;
+	padding-bottom: 0;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  background-color: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  position: absolute;
+  top: 60%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: #ffffff80;
+  font-weight: bold;
+  font-size: 40px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  color: #ffffffff;
+}
+
+/* Number text (1/3 etc) */
+.slide-number {
+  color: #f2f2f2;
+  font-size: 15px;
+	font-family: Arial, Helvetica, sans-serif;
+	right: 12px;
+  top: 8px;
+  position: absolute;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.thumbnail-row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.thumbnail {
+	box-sizing: border-box;
+  margin: 0;
+	display: block;
+  float: left;
+  width: 16.666666%;
+	/* background-color:#0000ff; */
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
