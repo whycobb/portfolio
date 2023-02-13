@@ -9,8 +9,8 @@ html, body {
 	background-color: #4DA6FF;
 	height: 150%;
 	
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
+  /* -ms-overflow-style: none;  /* IE and Edge */ */
+  /* scrollbar-width: none;  /* Firefox */ */
 	/* overflow-y: scroll; */
 	
 }
