@@ -1,4 +1,4 @@
-html, body {
+body {
 
   /* background-color: #cc5577; */
   /* background-attachment: fixed; */
@@ -9,14 +9,13 @@ html, body {
 	background-color: #4DA6FF;
 	height: 150%;
 	
-  /* -ms-overflow-style: none;  /* IE and Edge */ */
-  /* scrollbar-width: none;  /* Firefox */ */
-	/* overflow-y: scroll; */
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
 	
 }
 
 body::-webkit-scrollbar {
-  /* display: none; */
+  display: none;
 }
 
 
