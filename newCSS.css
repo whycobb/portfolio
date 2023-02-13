@@ -87,7 +87,7 @@ a:visited {
   /* flex-direction: row-reverse; */
   background-color: #3299FF;
   position: relative;
-  font-size: 1.5em;
+  font-size: 1.8em;
 	padding-top: 3pt;
   /* height: 100%; */
   width: 100%;
@@ -152,8 +152,8 @@ div.top-bar-category {
   top: 0;
   /* background-color: #cc5577; */
   padding: 10px;
-  font-size: 1.3em;
-	text-shadow: 0px 0px 1px #FFFFFF, 0px 1px 3px #000000;
+  font-size: 1.6em;
+	text-shadow: 0px 0px 0.2em #FFFFFF, 0px 1px 3px #000000;
 	z-index: 10;
 }
 
