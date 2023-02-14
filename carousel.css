@@ -54,7 +54,8 @@ img {
 
 @media screen and (max-width: 480px) {
 	.prev, .next {
-		font-size: 5vw;
+		font-size: 7vw;
+		padding: 2vw;
 	}
 }
 
