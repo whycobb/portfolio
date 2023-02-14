@@ -58,6 +58,7 @@ h1 {
   color: white;
   text-align: center;
 	margin: auto;
+	padding: auto;
 }
 
 h2 {
@@ -100,7 +101,7 @@ a:visited {
 	padding-top: 3pt;
   height: 3rem;
 	overflow: visible;
-  width: 100%;
+  /* width: 100%; */
 	z-index: 10;
 }
 
@@ -166,7 +167,7 @@ div.top-bar-category {
   padding: 10px;
   font-size: 1.3em;
 	text-shadow: 0px 0px 1px #FFFFFF, 0px 1px 3px #000000;
-	z-index: 10;
+	z-index: 11;
 }
 
 div.top-bar-category:hover {
