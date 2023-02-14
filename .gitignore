@@ -8,6 +8,7 @@ js/three.js-master/
 Pages/GISTest/
 Pages/Asteroids/
 Images/
+Fonts/
 
 #ignore config to hide logins/keys
 /pb_keys.json
