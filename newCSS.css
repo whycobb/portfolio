@@ -291,6 +291,10 @@ p {
 }
 	
 @media screen and (max-width: 480px) {
+	div.page-link {
+		outline-style: none;
+	}
+	
   .rel-header {
 		font-size: 6vw;
 	}
