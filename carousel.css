@@ -52,6 +52,12 @@ img {
   -webkit-user-select: none;
 }
 
+@media screen and (max-width: 480px) {
+	.prev, .next {
+		font-size: 5vw;
+	}
+}
+
 /* Position the "next button" to the right */
 .next {
   right: 0;
