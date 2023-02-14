@@ -47,8 +47,8 @@ html {
 
 @supports not (-webkit-overflow-scrolling: touch) {	/* iOS lies about supporting background-attachment and I would like to see Apple answer for this sin */
 	body {
-		background: linear-gradient(45deg, #1262B3, #4DA6FF, #1262B3);
-		background-size: 150% 150%;
+		background: linear-gradient(45deg, #1262B3, #4DA6FF, #4DA6FF, #1262B3);
+		background-size: 120% 120%;
 		background-attachment: fixed;
 		/* animation: gradient 15s ease infinite; */
 	}
@@ -99,7 +99,7 @@ a:visited {
 	white-space: nowrap;
   font-size: 2.5em;
 	font-family: zimbra-bold, impact;
-	text-shadow: 0px 0px 2px #FFFFFF, 0px 2px 5px #000000;
+	text-shadow: 0px 0px 2px #FFFFFF00, 0px 2px 5px #00000080;
 	padding-top: 3pt;
   height: 3rem;
 	overflow: visible;
@@ -223,9 +223,15 @@ p {
 
 
 /* Queries */
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 1200px) {
   .rel-header {
 		height: fit-content;
+	}
+	
+}
+	
+@media screen and (max-width: 480px) {
+  .rel-header {
 		font-size: 6vw;
 	}
 	
