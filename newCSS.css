@@ -5,6 +5,8 @@
 
 
 
+
+
 body {
 
   /* background-color: #cc5577; */
@@ -67,10 +69,9 @@ h2 {
 	margin: auto;
 }
 
-a:link {
+a {
 	text-decoration: none;
-	color: white;
-	opacity: 0.85;
+	color: #ffaa88;
 }
 
 a:hover {
@@ -79,7 +80,7 @@ a:hover {
 
 a:visited {
   text-decoration: none;
-	color: white;
+	color: #ff8800;
 }
 
 .rel-container {
@@ -95,9 +96,10 @@ a:visited {
   /* flex-direction: row-reverse; */
   background-color: #3299FF;
   position: relative;
+	white-space: nowrap;
   font-size: 2.5em;
 	font-family: zimbra-bold, impact;
-	text-shadow: 0px 0px 2px #FFFFFF99, 0px 2px 5px #000000;
+	text-shadow: 0px 0px 2px #FFFFFF, 0px 2px 5px #000000;
 	padding-top: 3pt;
   height: 3rem;
 	overflow: visible;
@@ -164,10 +166,16 @@ div.top-bar-category {
   float: right;
   top: 0;
   /* background-color: #cc5577; */
+	
   padding: 10px;
   font-size: 1.3em;
 	text-shadow: 0px 0px 1px #FFFFFF, 0px 1px 3px #000000;
 	z-index: 11;
+}
+
+div.top-bar-category a {
+  color: white;
+	opacity: 0.85;
 }
 
 div.top-bar-category:hover {
@@ -210,4 +218,34 @@ p {
 	margin-right: auto;
 	/* width: 70%; */
 	line-height: 1.2;
+}
+
+
+
+/* Queries */
+@media screen and (max-width: 480px) {
+  .rel-header {
+		height: fit-content;
+		font-size: 6vw;
+	}
+	
+	div.sticky {
+		font-size: 3.5vw;
+	}
+	
+	.flex-container-2 {
+		justify-content: center;
+		width: 100%;
+		margin: auto;
+		padding: 0;
+	}
+	
+	div.top-bar-category {
+		padding: 2vw;
+	}
+	
+	div.top-bar-category a {
+		color: white;
+		opacity: 0.85;
+	}
 }
