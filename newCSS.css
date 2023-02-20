@@ -194,6 +194,7 @@ div.art-links {
 }
 
 div#gamecontainer {
+	margin: auto;
   border-radius: 14px;
 	overflow: hidden;
 	width: fit-content;
