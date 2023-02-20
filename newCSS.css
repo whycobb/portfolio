@@ -197,6 +197,7 @@ div#gamecontainer {
 	margin: auto;
   border-radius: 14px;
 	overflow: hidden;
+	margin-top: 3%;
 	width: fit-content;
 	height: fit-content;
 	display: block;
