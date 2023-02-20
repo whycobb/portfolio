@@ -193,6 +193,11 @@ div.art-links {
   box-shadow: 9px 9px 18px #00000020;
 }
 
+div#gamecontainer {
+  border-radius: 14px;
+	
+}
+
 div.page-link {
   border-radius: 14px;
   position: relative;
