@@ -202,6 +202,10 @@ div#gamecontainer {
 	display: block;
 }
 
+div#gamecontainer canvas {
+	display: block;
+}
+
 div.page-link {
   border-radius: 14px;
   position: relative;
