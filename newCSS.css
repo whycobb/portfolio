@@ -197,6 +197,7 @@ div#gamecontainer {
   border-radius: 14px;
 	overflow: hidden;
 	width: fit-content;
+	height: fit-content;
 }
 
 div.page-link {
