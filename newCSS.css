@@ -198,6 +198,7 @@ div#gamecontainer {
 	overflow: hidden;
 	width: fit-content;
 	height: fit-content;
+	display: block;
 }
 
 div.page-link {
