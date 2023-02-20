@@ -197,13 +197,13 @@ div#gamecontainer {
 	margin: auto;
   border-radius: 14px;
 	overflow: hidden;
-	width: fit-content;
+	/* width: fit-content; */
 	height: fit-content;
 	display: block;
 }
 
 div#gamecontainer canvas {
-	width: 60%;
+	width: 110%;
 	display: block;
 }
 
