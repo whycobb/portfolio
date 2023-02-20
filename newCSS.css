@@ -203,6 +203,7 @@ div#gamecontainer {
 }
 
 div#gamecontainer canvas {
+	width: 60%;
 	display: block;
 }
 
