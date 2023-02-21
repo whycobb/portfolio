@@ -1,0 +1,162 @@
+@font-face {
+  font-family: "zimbra-bold";
+  src: url("Fonts/Zimbra-Bold.woff2");
+}
+
+
+body {
+	background-color: #DEA747;
+}
+
+
+@supports not (-webkit-overflow-scrolling: touch) {	/* iOS lies about supporting background-attachment and I would like to see Apple answer for this sin */
+	body {
+		background: linear-gradient(45deg, #DE8552, #E8B56D, #E8B56D, #DE8552);
+		background-size: 120% 120%;
+		background-attachment: fixed;
+	}
+}
+
+#site { overflow: hidden; }
+
+h1 {
+  color: white;
+}
+
+h2 {
+  color: #194c7f;
+}
+
+a {
+	color: #ffaa88;
+}
+
+a:hover {
+}
+
+a:visited {
+	color: #ff8800;
+}
+
+.rel-container {
+}
+
+.rel-header {
+  background-color: #E29E5D;
+}
+
+/* Container for the whole page, flexed as a column */
+.mega-flex {
+}
+
+/* This flexbox is for the body of the page */
+.flex-container {
+}
+
+/* This flexbox is in the sticky bar */
+.flex-container-2 {
+	
+}
+
+div.sticky {
+ /* align-items: center;*/
+
+	box-shadow: 0 6px 5px #2B210E80;
+  background-color: #E29E5D;
+}
+
+div.top-bar-category {
+	text-shadow: 0px 0px 1px #FFFFFF, 0px 1px 3px #000000;
+}
+
+div.top-bar-category a {
+  color: white;
+}
+
+div.top-bar-category:hover {
+	text-shadow: 0px 0px 6px #FFFFFF, 0px 3px 5px #000000;
+}
+
+div.art-links {
+  background: #7bbdee;
+}
+
+div#gamecontainer {
+}
+
+div#gamecontainer canvas {
+}
+
+div.page-link {
+	outline-color:#ffffff80;
+}
+
+div.page-link:hover {
+}
+
+div.page-link img {
+}
+
+div.page-link p {
+}
+
+@media screen and (min-width: 830px) {
+	div.page-link p{
+	}
+}
+
+div.text-body {
+	background-color: #80291720;
+}
+
+p {
+  font-family: verdana;
+	color: white;
+  font-size: 1.1em;
+	text-align: justify;
+	text-justify: auto;
+	margin-left: auto;
+	margin-right: auto;
+	/* width: 70%; */
+	line-height: 1.2;
+}
+
+
+
+/* Queries */
+@media screen and (max-width: 1200px) {
+  .rel-header {
+		height: fit-content;
+	}
+	
+}
+	
+@media screen and (max-width: 480px) {
+	div.page-link {
+		outline-style: none;
+	}
+	
+  .rel-header {
+		font-size: 6vw;
+	}
+	
+	div.sticky {
+		font-size: 3.5vw;
+	}
+	
+	.flex-container-2 {
+		justify-content: center;
+		width: 100%;
+		margin: auto;
+		padding: 0;
+	}
+	
+	div.top-bar-category {
+		padding: 2vw;
+	}
+	
+	div.top-bar-category a {
+		color: white;
+		opacity: 0.85;
+	}
+}
