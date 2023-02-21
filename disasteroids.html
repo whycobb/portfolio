@@ -61,7 +61,17 @@
 					Right and left arrow keys rotate.</br>
 					<br>
 					Keyboard controls only, sorry mobile users.
-					
+					<br><br>
+					This applet is built using <a href="https://p5js.org/">p5.js</a>. The graphics are constructed
+					using a small utility class I wrote, ArbitraryShape.js, which abstracts the plotting of strokes
+					and handles rotation, marching, etc. more conveniently than vanilla p5 does. This made the game
+					logic very simple to build - for example, the ship object simply asks its ArbitraryShape
+					component to rotate and adjust velocity, and that's movement taken care of. The ArbitraryShape
+					then passes back its new position so the ship can check collision.
+					<br><br>
+					This was a quick project for a class in college, and it would be nice to revisit it to add
+					some visual flair and introduce scoring. These days, though, it makes more sense to build a
+					fresh version 2 in Three.js.
 				</p>
 			</div>
 		
