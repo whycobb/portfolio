@@ -17,3 +17,11 @@ camera.position.z = 5;
 
 console.log("ThreeMiniWindow is running!");
 
+function animate() {
+	requestAnimationFrame( animate );
+	renderer.render( scene, camera );
+}
+animate();
+
+console.log("ThreeMiniWindow should now be rendering");
+
