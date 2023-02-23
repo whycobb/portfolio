@@ -47,6 +47,8 @@ function updateCanvasSize() {
 	renderer.getSize(prevSize);
 	
 	if (width != prevSize.x || height != prevSize.y) {
+		console.log("Updating size to: (" + width + ", " + height + ")");
+		
 		renderer.setSize(width, height, false);
     camera.aspect = width / height;
     camera.updateProjectionMatrix();
