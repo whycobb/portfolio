@@ -7,7 +7,7 @@ const camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.inner
 const renderer = new THREE.WebGLRenderer();
 renderer.setSize( window.innerWidth, window.innerHeight );
 
-myWindow = document.getElementById("window1");
+let myWindow = document.getElementById("window1");
 console.log("myWindow is: ", myWindow);
 myWindow.appendChild( renderer.domElement );
 
