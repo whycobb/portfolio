@@ -183,8 +183,10 @@ div.top-bar-category:hover {
 }
 
 div.three-mini-window {
-	width: 70%;
-	height: 30%;
+	width: 70vw;
+	mind-width: 300px;
+	height: 50vw;
+	min-height: 230px;
 	background: #ff00ff;
 	margin: auto;
 }
