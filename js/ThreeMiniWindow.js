@@ -28,11 +28,11 @@ scene.add( cube );
 
 
 //get shaders
-const bwFrag = document.getElementById("bwshader-frag");
-const bwVert = document.getElementById("bwshader-vert");
+const bwFrag = document.getElementById("bwshader-frag").textContent;
+const bwVert = document.getElementById("bwshader-vert").textContent;
 
-console.log(bwFrag).textContent;
-console.log(bwVert).textContent;
+console.log(bwFrag);
+console.log(bwVert);
 
 
 
