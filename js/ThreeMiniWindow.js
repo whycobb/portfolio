@@ -8,7 +8,8 @@ var height = myWindow.offsetHeight;
 console.log("myWindow is: ", myWindow);
 console.log("Width is: ", width, "\nHeight is: ", height);
 
-const renderer = new THREE.WebGLRenderer( {alpha: true} );
+//const renderer = new THREE.WebGLRenderer( {alpha: true} );
+const renderer = new THREE.WebGLRenderer();
 renderer.setSize( width, height );
 
 myWindow.appendChild( renderer.domElement );
@@ -31,7 +32,7 @@ scene.add( cube );
 const bwFrag = document.getElementById("bwshader-frag").textContent;
 const bwVert = document.getElementById("bwshader-vert").textContent;
 
-//add listener
+//add click listener
 myWindow.addEventListener( 'mousedown', onDocumentMouseDown, false );
 
 console.log(bwFrag);
