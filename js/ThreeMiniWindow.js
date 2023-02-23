@@ -2,8 +2,8 @@ import * as THREE from '/js/three.js-master/build/three.module.js';
 
 //Get div to attach to
 let myWindow = document.getElementById("window1");
-var width = myWindow.width;
-var height = myWindow.height;
+var width = myWindow.offsetWidth;
+var height = myWindow.offsetHeight;
 
 console.log("myWindow is: ", myWindow);
 console.log("Width is: ", width, "\nHeight is: ", height);
