@@ -26,8 +26,24 @@ http.createServer(function(request, response) {
         response.end();
         return;
       }
+			
+			
+			//Checking MIME types
+			let fileExtension = filename.split('.').pop();
+			let contentType = "";
+			
+			if (fileExtension == "js") {
+				contentType = "text/javascript";
+			}
+			
+			if (fileExtension == "html") {
+				contentType = "text/html";
+			}
+			
+		//	res.setHeader("Content-Type", mime.lookup(url)); //Solution!
+		//	response.setHeader("Content-Type", "text/html"); //Solution!
 
-      response.writeHead(200);
+      response.writeHead(200, {"Content-Type": contentType});
       response.write(file, "binary");
       response.end();
     });
