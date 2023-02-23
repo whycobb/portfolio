@@ -47,7 +47,7 @@ function updateCanvasSize() {
 	renderer.getSize(prevSize);
 	
 	if (width != prevSize.x || height != prevSize.y) {
-		console.log("Updating size to: (" + width + ", " + height + ")");
+	console.log("Updating size from (" + prevSize.x + ", " + prevSize.y + "), to: (" + width + ", " + height + ")");
 		
 		renderer.setSize(width, height, false);
     camera.aspect = width / height;
