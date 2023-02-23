@@ -10,10 +10,10 @@ console.log("Width is: ", width, "\nHeight is: ", height);
 
 const scene = new THREE.Scene();
 
-const camera = new THREE.PerspectiveCamera( 75, myWindow.innerWidth / myWindow.innerHeight, 0.1, 1000 );
+const camera = new THREE.PerspectiveCamera( 75, width / height, 0.1, 1000 );
 
 const renderer = new THREE.WebGLRenderer();
-renderer.setSize( myWindow.innerWidth, myWindow.innerHeight );
+renderer.setSize( width, height );
 
 myWindow.appendChild( renderer.domElement );
 
