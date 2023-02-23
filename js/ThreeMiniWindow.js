@@ -27,6 +27,13 @@ const cube = new THREE.Mesh( geometry, material );
 scene.add( cube );
 
 
+//get shaders
+const bwFrag = document.getElementById("bwshader-frag");
+const bwVert = document.getElementById("bwshader-vert");
+
+
+
+
 console.log("ThreeMiniWindow is running!");
 
 function animate() {
