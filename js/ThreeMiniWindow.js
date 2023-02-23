@@ -27,14 +27,28 @@ camera.position.z = 5;
 console.log("ThreeMiniWindow is running!");
 
 function animate() {
-	requestAnimationFrame( animate );
-	renderer.render( scene, camera );
+	updateCanvasSize();
 	
 	cube.rotation.x += 0.001;
 	cube.rotation.y += 0.0012;
 	cube.rotation.z += 0.0011;
+	
+	requestAnimationFrame( animate );
+	renderer.render( scene, camera );
 }
 animate();
 
 console.log("ThreeMiniWindow should now be rendering");
+
+function updateCanvasSize() {
+	width = myWindow.offsetWidth;
+	height = myWindow.offsetHeight;
+	prevSize = render.getSize();
+	
+	if (width != prevSize.x || height != prevSize.y) {
+		renderer.setSize(width, height, false);
+    camera.aspect = width / height;
+    camera.updateProjectionMatrix();
+	}
+}
 
