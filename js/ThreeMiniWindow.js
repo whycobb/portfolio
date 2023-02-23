@@ -43,7 +43,7 @@ console.log("ThreeMiniWindow should now be rendering");
 function updateCanvasSize() {
 	width = myWindow.offsetWidth;
 	height = myWindow.offsetHeight;
-	prevSize = render.getSize();
+	prevSize = renderer.getSize();
 	
 	if (width != prevSize.x || height != prevSize.y) {
 		renderer.setSize(width, height, false);
