@@ -193,7 +193,12 @@ div.three-mini-window {
 	background: #ff00ff;
 	margin: auto;
 	margin-top: 1vh;
+	display: block;
 	overflow: hidden;
+}
+
+div.three-mini-window canvas {
+	display: block;
 }
 
 div.art-links {
