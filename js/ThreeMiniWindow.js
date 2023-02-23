@@ -31,6 +31,9 @@ scene.add( cube );
 const bwFrag = document.getElementById("bwshader-frag");
 const bwVert = document.getElementById("bwshader-vert");
 
+console.log(bwFrag);
+console.log(bwVert);
+
 
 
 
