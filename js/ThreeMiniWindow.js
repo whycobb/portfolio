@@ -5,10 +5,10 @@ let myWindow = document.getElementById("window1");
 
 const scene = new THREE.Scene();
 
-const camera = new THREE.PerspectiveCamera( 75, myWindow.innerWidth / myWindow.innerHeight, 0.1, 1000 );
+const camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 0.1, 1000 );
 
 const renderer = new THREE.WebGLRenderer();
-renderer.setSize( myWindow.innerWidth, myWindow.innerHeight );
+renderer.setSize( window.innerWidth, window.innerHeight );
 
 console.log("myWindow is: ", myWindow);
 myWindow.appendChild( renderer.domElement );
