@@ -32,7 +32,7 @@ const bwFrag = document.getElementById("bwshader-frag").textContent;
 const bwVert = document.getElementById("bwshader-vert").textContent;
 
 //add listener
-document.addEventListener( 'mousedown', onDocumentMouseDown, false );
+myWindow.addEventListener( 'mousedown', onDocumentMouseDown, false );
 
 console.log(bwFrag);
 console.log(bwVert);
