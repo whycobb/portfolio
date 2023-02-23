@@ -26,9 +26,9 @@ function animate() {
 	requestAnimationFrame( animate );
 	renderer.render( scene, camera );
 	
-	cube.object3D.rotation.x += 0.01;
-	cube.object3D.rotation.y += 0.012;
-	cube.object3D.rotation.z += 0.011;
+	cube.rotation.x += 0.01;
+	cube.rotation.y += 0.012;
+	cube.rotation.z += 0.011;
 }
 animate();
 
