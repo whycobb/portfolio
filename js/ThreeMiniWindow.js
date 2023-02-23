@@ -8,6 +8,7 @@ const renderer = new THREE.WebGLRenderer();
 renderer.setSize( window.innerWidth, window.innerHeight );
 
 myWindow = document.getElementById("window1");
+console.log("myWindow is: ", myWindow);
 myWindow.appendChild( renderer.domElement );
 
 const geometry = new THREE.BoxGeometry( 1, 1, 1 );
