@@ -74,5 +74,6 @@ function updateCanvasSize() {
 
 function onDocumentMouseDown( event ) {
 	console.log("clickt");
+	console.log(event);
 }
 
