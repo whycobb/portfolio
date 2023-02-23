@@ -184,12 +184,15 @@ div.top-bar-category:hover {
 
 div.three-mini-window {
   border-radius: 14px;
-	width: 70vw;
+	width: 90vw;
 	mind-width: 300px;
+	max-width: 1000px;
 	height: 50vw;
 	min-height: 230px;
+	max-height: 80vh;
 	background: #ff00ff;
 	margin: auto;
+	margin-top: 1vh;
 	overflow: hidden;
 }
 
