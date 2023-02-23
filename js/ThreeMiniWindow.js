@@ -2,6 +2,10 @@ import * as THREE from '/js/three.js-master/build/three.module.js';
 
 //Get div to attach to
 let myWindow = document.getElementById("window1");
+var width = myWindow.innerWidth;
+var height = myWindow.innerHeight;
+
+console.log("Width is: ", width, "\nHeight is: ", height);
 
 const scene = new THREE.Scene();
 
