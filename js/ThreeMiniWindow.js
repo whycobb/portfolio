@@ -2,9 +2,10 @@ import * as THREE from '/js/three.js-master/build/three.module.js';
 
 //Get div to attach to
 let myWindow = document.getElementById("window1");
-var width = myWindow.innerWidth;
-var height = myWindow.innerHeight;
+var width = myWindow.width;
+var height = myWindow.height;
 
+console.log("myWindow is: ", myWindow);
 console.log("Width is: ", width, "\nHeight is: ", height);
 
 const scene = new THREE.Scene();
@@ -14,7 +15,6 @@ const camera = new THREE.PerspectiveCamera( 75, myWindow.innerWidth / myWindow.i
 const renderer = new THREE.WebGLRenderer();
 renderer.setSize( myWindow.innerWidth, myWindow.innerHeight );
 
-console.log("myWindow is: ", myWindow);
 myWindow.appendChild( renderer.domElement );
 
 const geometry = new THREE.BoxGeometry( 1, 1, 1 );
