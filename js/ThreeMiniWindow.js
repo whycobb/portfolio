@@ -1,8 +1,7 @@
-//import * as THREE from '/js/three.js-master/build/three.module.js';
-//import * as THREE from '../node_modules/three/build/three.module.js';
 import * as THREE from 'three';
 
 import { OBJLoader } from 'three/addons/loaders/OBJLoader.js';
+import { KTX2Loader } from 'three/addons/loaders/KTX2Loader.js';
 
 var startTime = Date.now();
 
