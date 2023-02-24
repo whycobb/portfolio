@@ -15,8 +15,8 @@ console.log("Width is: ", width, "\nHeight is: ", height);
 
 document.getElementById("output").innerText = ("Render width: " + width + "; height: " + height);
 
-const renderer = new THREE.WebGLRenderer( {alpha: true} );
-//const renderer = new THREE.WebGLRenderer();
+//const renderer = new THREE.WebGLRenderer( {alpha: true} );
+const renderer = new THREE.WebGLRenderer();
 renderer.setPixelRatio( window.devicePixelRatio );
 renderer.setSize( width, height );
 
