@@ -40,31 +40,30 @@ myWindow.addEventListener( 'mousedown', onDocumentMouseDown, false );
 
 
 //Set up brainwave shader
-var myTexture = new THREE.TextureLoader().load( './Images/Textures/Noise.png' );
-myTexture.wrapS = THREE.RepeatWrapping;
-myTexture.wrapT = THREE.RepeatWrapping;
-myTexture.premultiplyAlpha = false;
+var noiseTex = new THREE.TextureLoader().load( './Images/Textures/Noise.png' );
+noiseTex.wrapS = THREE.RepeatWrapping;
+noiseTex.wrapT = THREE.RepeatWrapping;
+noiseTex.premultiplyAlpha = false;
 
 // var brainTex = new THREE.TextureLoader().load( 'BrainEdging.png' );
 // brainTex.wrapS = THREE.RepeatWrapping;
 // brainTex.wrapT = THREE.RepeatWrapping;
 // brainTex.premultiplyAlpha = false;
 
-var animGreen = new THREE.TextureLoader().load( './Images/Textures/BrainEdging.png' );
-animGreen.wrapS = THREE.RepeatWrapping;
-animGreen.wrapT = THREE.RepeatWrapping;
-animGreen.magFilter = THREE.NearestFilter;
-animGreen.minFilter = THREE.NearestFilter;
-animGreen.encoding = THREE.LinearEncoding;
-animGreen.premultiplyAlpha = false;
+var edgeTex = new THREE.TextureLoader().load( './Images/Textures/BrainEdging.png' );
+edgeTex.wrapS = THREE.RepeatWrapping;
+edgeTex.wrapT = THREE.RepeatWrapping;
+edgeTex.magFilter = THREE.NearestFilter;
+edgeTex.minFilter = THREE.NearestFilter;
+edgeTex.encoding = THREE.LinearEncoding;
+edgeTex.premultiplyAlpha = false;
 
 			
 let uniforms = {
-	u_time: { type: "f", value: 1.0 },
-	u_tex0: { type: "t", value: myTexture },
-	//u_tex1: { type: "t", value: brainTex },
-	u_tex2: { type: "t", value: animGreen },
-	u_mouse: { type: "v2", value: new THREE.Vector2() }
+	timeMsec: { value: 1.0 },
+	inColor: {value:new THREE.Color(0xFFFFFF)},
+	noiseTex: { value: this.noiseTex.value },
+	edgeTex: { value: this.edgeTex.value }
 };
 
 var bwMaterial = new THREE.ShaderMaterial( {
@@ -88,7 +87,7 @@ function animate() {
 	cube.rotation.y += 0.0012;
 	cube.rotation.z += 0.0011;
 	
-	uniforms.u_time.value = (Date.now() - startTime) / 1000;
+	uniforms.timeMsec.value = (Date.now() - startTime) / 1000;
 	
 	requestAnimationFrame( animate );
 	renderer.render( scene, camera );

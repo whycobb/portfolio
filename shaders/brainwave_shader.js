@@ -66,6 +66,6 @@ window.bwFrag = `#ifdef GL_ES
 
 		//bring in color, modulated by brightness, for the shader output
 		gl_FragColor = vec4(brightness * color,1.0);
-		gl_FragColor = vec4(texture2D(noiseTex, st).rgb, 0.5);
-		gl_FragColor = vec4(1.0, 0.67, 0.2, 1.0);
+//		gl_FragColor = vec4(texture2D(noiseTex, st).rgb, 0.5);
+//		gl_FragColor = vec4(1.0, 0.67, 0.2, 1.0);
 	}`;
