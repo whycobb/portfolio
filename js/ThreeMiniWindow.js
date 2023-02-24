@@ -8,8 +8,8 @@ var height = myWindow.offsetHeight;
 console.log("myWindow is: ", myWindow);
 console.log("Width is: ", width, "\nHeight is: ", height);
 
-//const renderer = new THREE.WebGLRenderer( {alpha: true} );
-const renderer = new THREE.WebGLRenderer();
+const renderer = new THREE.WebGLRenderer( {alpha: true} );
+//const renderer = new THREE.WebGLRenderer();
 renderer.setSize( width, height );
 
 myWindow.appendChild( renderer.domElement );
