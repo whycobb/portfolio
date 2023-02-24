@@ -71,6 +71,9 @@ var bwMaterial = new THREE.ShaderMaterial( {
 	fragmentShader: window.bwFrag
 } );
 
+cube.material = bwMaterial;
+cube.material.needsUpdate = true;
+
 
 
 
