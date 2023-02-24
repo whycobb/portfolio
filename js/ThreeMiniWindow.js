@@ -1,9 +1,9 @@
-//import * as THREE from '/js/three.js-master/build/three.module.js';
-import * as THREE from '../node_modules/three/build/three.js';
+import * as THREE from '/js/three.js-master/build/three.js';
+//import * as THREE from '../node_modules/three/build/three.js';
 
-//import { OBJLoader } from '/js/three.js-master/examples/js/loaders/OBJLoader.js';
+import { OBJLoader } from '/js/three.js-master/examples/js/loaders/OBJLoader.js';
 //import { OBJLoader } from '../node_modules/three/examples/jsm/loaders/OBJLoader.js';
-import { OBJLoader } from '../node_modules/three/examples/js/loaders/GLTFLoader.js';
+//import { OBJLoader } from '../node_modules/three/examples/js/loaders/GLTFLoader.js';
 
 var startTime = Date.now();
 
