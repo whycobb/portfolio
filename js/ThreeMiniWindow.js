@@ -1,7 +1,7 @@
 import * as THREE from 'three';
 
 import { OBJLoader } from 'three/addons/loaders/OBJLoader.js';
-import { KTX2Loader } from 'three/addons/loaders/KTX2Loader.js';
+//import { KTX2Loader } from 'three/addons/loaders/KTX2Loader.js';
 
 var startTime = Date.now();
 
@@ -15,8 +15,8 @@ console.log("Width is: ", width, "\nHeight is: ", height);
 
 document.getElementById("output").innerText = ("Render width: " + width + "; height: " + height);
 
-const renderer = new THREE.WebGLRenderer( {alpha: true} );
-//const renderer = new THREE.WebGLRenderer();
+//const renderer = new THREE.WebGLRenderer( {alpha: true} );
+const renderer = new THREE.WebGLRenderer( { antialias: (width > 860 ? true : false) } );
 renderer.setPixelRatio( window.devicePixelRatio );
 renderer.setSize( width, height );
 
