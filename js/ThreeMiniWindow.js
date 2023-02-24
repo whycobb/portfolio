@@ -43,12 +43,12 @@ myTexture.wrapS = THREE.RepeatWrapping;
 myTexture.wrapT = THREE.RepeatWrapping;
 myTexture.premultiplyAlpha = false;
 
-brainTex = new THREE.TextureLoader().load( 'BrainEdging.png' );
+var brainTex = new THREE.TextureLoader().load( 'BrainEdging.png' );
 brainTex.wrapS = THREE.RepeatWrapping;
 brainTex.wrapT = THREE.RepeatWrapping;
 brainTex.premultiplyAlpha = false;
 
-animGreen = new THREE.TextureLoader().load( 'BrainEdging.png' );
+var animGreen = new THREE.TextureLoader().load( 'BrainEdging.png' );
 animGreen.wrapS = THREE.RepeatWrapping;
 animGreen.wrapT = THREE.RepeatWrapping;
 animGreen.magFilter = THREE.NearestFilter;
