@@ -1,5 +1,6 @@
 //import * as THREE from '/js/three.js-master/build/three.module.js';
-import * as THREE from '../node_modules/three/build/three.module.js';
+//import * as THREE from '../node_modules/three/build/three.module.js';
+import * as THREE from 'three';
 
 //import { OBJLoader } from '/js/three.js-master/examples/js/loaders/OBJLoader.js';
 
