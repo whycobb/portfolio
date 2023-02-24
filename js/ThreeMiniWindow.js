@@ -1,5 +1,5 @@
-//import * as THREE from '/js/three.js-master/build/three.module.js';
-import * as THREE from 'three';
+import * as THREE from '/js/three.js-master/build/three.module.js';
+//import * as THREE from 'three';
 //import { OBJLoader } from './js/three.js-master/addons/loaders/OBJLoader.js';
 
 var startTime = Date.now();
