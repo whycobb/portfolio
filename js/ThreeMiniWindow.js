@@ -1,5 +1,7 @@
 import * as THREE from '/js/three.js-master/build/three.module.js';
 
+var startTime = Date.now();
+
 //Get div to attach to
 let myWindow = document.getElementById("window1");
 var width = myWindow.offsetWidth;
