@@ -1,4 +1,4 @@
-window.bwVert = `varying vec2 vUv;void main(){vUv=uv;vec4 n=modelViewMatrix*vec4(position,1);gl_Position=projectionMatrix*n;}`;
+window.bwVert = `varying vec2 f;void main(){f=uv;vec4 n=modelViewMatrix*vec4(position,1);gl_Position=projectionMatrix*n;}`;
 
 window.bwFrag = `#ifdef GL_ES
 precision mediump float;
