@@ -33,6 +33,7 @@ const material = new THREE.MeshBasicMaterial( { color: 0x00ff00 } );
 const cube = new THREE.Mesh( geometry, material );
 scene.add( cube );
 
+var brainGeo;
 
 //load brain
 var objLoader = new OBJLoader();
