@@ -35,8 +35,8 @@ scene.add( cube );
 //add click listener
 myWindow.addEventListener( 'mousedown', onDocumentMouseDown, false );
 
-console.log(window.bwFrag);
-console.log(window.bwVert);
+console.log( window.bwfrag );
+console.log( window.bwvert );
 
 
 
