@@ -135,6 +135,7 @@ function updateCanvasSize() {
 		renderer.setSize(width, height, true);
     camera.aspect = width / height;
     camera.updateProjectionMatrix();
+		document.getElementById("output").innerText = ("Render width: " + width + "; height: " + height);
 	}
 }
 
