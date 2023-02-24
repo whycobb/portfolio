@@ -46,10 +46,10 @@ let uniforms = {
 	u_mouse: { type: "v2", value: new THREE.Vector2() }
 };
 
-var material = new THREE.ShaderMaterial( {
+var bwMaterial = new THREE.ShaderMaterial( {
 	uniforms: uniforms,
-	vertexShader: document.getElementById( 'vertexShader' ).textContent,
-	fragmentShader: document.getElementById( 'fragmentShader' ).textContent
+	vertexShader: window.bwVert,
+	fragmentShader: window.bwFrag
 } );
 
 
