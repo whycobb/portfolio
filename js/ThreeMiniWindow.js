@@ -1,5 +1,5 @@
-//import * as THREE from '/js/three.js-master/build/three.module.js';
-import * as THREE from '../node_modules/three/build/three.module.js';
+//import * as three from '/js/three.js-master/build/three.module.js';
+import * as three from '../node_modules/three/build/three.module.js';
 
 //import { OBJLoader } from '/js/three.js-master/examples/js/loaders/OBJLoader.js';
 //import { OBJLoader } from '../node_modules/three/examples/jsm/loaders/OBJLoader.js';
@@ -15,23 +15,23 @@ var height = myWindow.offsetHeight;
 console.log("myWindow is: ", myWindow);
 console.log("Width is: ", width, "\nHeight is: ", height);
 
-const renderer = new THREE.WebGLRenderer( {alpha: true} );
-//const renderer = new THREE.WebGLRenderer();
+const renderer = new three.WebGLRenderer( {alpha: true} );
+//const renderer = new three.WebGLRenderer();
 renderer.setSize( width, height );
 
 myWindow.appendChild( renderer.domElement );
 
 //Scene setup
-const scene = new THREE.Scene();
+const scene = new three.Scene();
 
 //Camera
-const camera = new THREE.PerspectiveCamera( 75, width / height, 0.1, 1000 );
+const camera = new three.PerspectiveCamera( 75, width / height, 0.1, 1000 );
 camera.position.z = 5;
 
 //Basic box geometry
-const geometry = new THREE.BoxGeometry( 3, 3, 3 );
-const material = new THREE.MeshBasicMaterial( { color: 0x00ff00 } );
-const cube = new THREE.Mesh( geometry, material );
+const geometry = new three.BoxGeometry( 3, 3, 3 );
+const material = new three.MeshBasicMaterial( { color: 0x00ff00 } );
+const cube = new three.Mesh( geometry, material );
 scene.add( cube );
 
 
@@ -64,33 +64,33 @@ myWindow.addEventListener( 'mousedown', onDocumentMouseDown, false );
 
 
 //Set up brainwave shader
-var noiseTex = new THREE.TextureLoader().load( './Images/Textures/Noise.png' );
-noiseTex.wrapS = THREE.RepeatWrapping;
-noiseTex.wrapT = THREE.RepeatWrapping;
+var noiseTex = new three.TextureLoader().load( './Images/Textures/Noise.png' );
+noiseTex.wrapS = three.RepeatWrapping;
+noiseTex.wrapT = three.RepeatWrapping;
 noiseTex.premultiplyAlpha = false;
 
-// var brainTex = new THREE.TextureLoader().load( 'BrainEdging.png' );
-// brainTex.wrapS = THREE.RepeatWrapping;
-// brainTex.wrapT = THREE.RepeatWrapping;
+// var brainTex = new three.TextureLoader().load( 'BrainEdging.png' );
+// brainTex.wrapS = three.RepeatWrapping;
+// brainTex.wrapT = three.RepeatWrapping;
 // brainTex.premultiplyAlpha = false;
 
-var edgeTex = new THREE.TextureLoader().load( './Images/Textures/BrainEdging.png' );
-edgeTex.wrapS = THREE.RepeatWrapping;
-edgeTex.wrapT = THREE.RepeatWrapping;
-edgeTex.magFilter = THREE.NearestFilter;
-edgeTex.minFilter = THREE.NearestFilter;
-edgeTex.encoding = THREE.LinearEncoding;
+var edgeTex = new three.TextureLoader().load( './Images/Textures/BrainEdging.png' );
+edgeTex.wrapS = three.RepeatWrapping;
+edgeTex.wrapT = three.RepeatWrapping;
+edgeTex.magFilter = three.NearestFilter;
+edgeTex.minFilter = three.NearestFilter;
+edgeTex.encoding = three.LinearEncoding;
 edgeTex.premultiplyAlpha = false;
 
 			
 let uniforms = {
 	x: { value: 1.0 },										//x->timeMsec
-	t: {value:new THREE.Color(0x558ee6)},	//t->inColor
+	t: {value:new three.Color(0x558ee6)},	//t->inColor
 	m: { value: noiseTex },								//m->noiseTex
 	v: { value: edgeTex }									//v->edgeTex
 };
 
-var bwMaterial = new THREE.ShaderMaterial( {
+var bwMaterial = new three.ShaderMaterial( {
 	uniforms: uniforms,
 	vertexShader: window.bwVert,
 	fragmentShader: window.bwFrag
@@ -125,7 +125,7 @@ console.log("ThreeMiniWindow should now be rendering");
 function updateCanvasSize() {
 	width = myWindow.offsetWidth;
 	height = myWindow.offsetHeight;
-	const prevSize = new THREE.Vector2();
+	const prevSize = new three.Vector2();
 	renderer.getSize(prevSize);
 	
 	if (width != prevSize.x || height != prevSize.y) {
