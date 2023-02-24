@@ -86,6 +86,8 @@ function animate() {
 	cube.rotation.y += 0.0012;
 	cube.rotation.z += 0.0011;
 	
+	uniforms.u_time.value = (Date.now() - startTime) / 1000;
+	
 	requestAnimationFrame( animate );
 	renderer.render( scene, camera );
 }
