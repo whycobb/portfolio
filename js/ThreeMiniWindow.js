@@ -81,10 +81,10 @@ edgeTex.premultiplyAlpha = false;
 
 			
 let uniforms = {
-	timeMsec: { value: 1.0 },
-	inColor: {value:new THREE.Color(0x558ee6)},
-	noiseTex: { value: noiseTex },
-	edgeTex: { value: edgeTex }
+	x: { value: 1.0 },
+	t: {value:new THREE.Color(0x558ee6)},
+	m: { value: noiseTex },
+	v: { value: edgeTex }
 };
 
 var bwMaterial = new THREE.ShaderMaterial( {
@@ -108,7 +108,7 @@ function animate() {
 	cube.rotation.y += 0.0012;
 	cube.rotation.z += 0.0011;
 	
-	uniforms.timeMsec.value = (Date.now() - startTime) / 1000;
+	uniforms.x.value = (Date.now() - startTime) / 1000;	//x->timeMsec
 	
 	requestAnimationFrame( animate );
 	renderer.render( scene, camera );
