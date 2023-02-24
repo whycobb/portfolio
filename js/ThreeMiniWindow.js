@@ -78,8 +78,8 @@ function onDocumentMouseDown( event ) {
 	console.log(event);
 	
 	
-	let bwFrag2 = document.getElementById("bwshader-frag").textContent;
-	let bwVert2 = document.getElementById("bwshader-vert").textContent;
+	let bwFrag2 = document.getElementById("bwshader-frag").innerHTML;
+	let bwVert2 = document.getElementById("bwshader-vert").innerHTML;
 	
 	console.log(bwFrag2);
 	console.log(bwVert2);
