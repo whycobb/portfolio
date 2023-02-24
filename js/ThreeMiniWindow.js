@@ -35,9 +35,28 @@ scene.add( cube );
 //add click listener
 myWindow.addEventListener( 'mousedown', onDocumentMouseDown, false );
 
-const bwFrag = window.bwFrag;
-const bwVert = window.bwVert;
 
+
+//Set up brainwave shader
+var myTexture = new THREE.TextureLoader().load( 'Noise.png' );
+myTexture.wrapS = THREE.RepeatWrapping;
+myTexture.wrapT = THREE.RepeatWrapping;
+myTexture.premultiplyAlpha = false;
+
+brainTex = new THREE.TextureLoader().load( 'BrainEdging.png' );
+brainTex.wrapS = THREE.RepeatWrapping;
+brainTex.wrapT = THREE.RepeatWrapping;
+brainTex.premultiplyAlpha = false;
+
+animGreen = new THREE.TextureLoader().load( 'BrainEdging.png' );
+animGreen.wrapS = THREE.RepeatWrapping;
+animGreen.wrapT = THREE.RepeatWrapping;
+animGreen.magFilter = THREE.NearestFilter;
+animGreen.minFilter = THREE.NearestFilter;
+animGreen.encoding = THREE.LinearEncoding;
+animGreen.premultiplyAlpha = false;
+
+			
 let uniforms = {
 	u_time: { type: "f", value: 1.0 },
 	u_tex0: { type: "t", value: myTexture },
