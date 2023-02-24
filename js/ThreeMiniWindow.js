@@ -17,6 +17,7 @@ document.getElementById("output").innerText = ("Render width: " + width + "; hei
 
 //const renderer = new THREE.WebGLRenderer( {alpha: true} );
 const renderer = new THREE.WebGLRenderer();
+if (width >= 800) renderer.antialias = true; else renderer.antialias = false;
 renderer.setPixelRatio( window.devicePixelRatio );
 renderer.setSize( width, height );
 
