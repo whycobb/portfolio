@@ -1,7 +1,7 @@
 import * as THREE from 'three';
 
-//import { OBJLoader } from 'three/addons/loaders/OBJLoader.js';
-//import { KTX2Loader } from 'three/addons/loaders/KTX2Loader.js';
+import { OBJLoader } from 'three/addons/loaders/OBJLoader.js';
+import { KTX2Loader } from 'three/addons/loaders/KTX2Loader.js';
 
 var startTime = Date.now();
 
@@ -13,10 +13,10 @@ var height = myWindow.offsetHeight;
 console.log("myWindow is: ", myWindow);
 console.log("Width is: ", width, "\nHeight is: ", height);
 
-//document.getElementById("output").innerText = ("Render width: " + width + "; height: " + height);
+document.getElementById("output").innerText = ("Render width: " + width + "; height: " + height);
 
 //const renderer = new THREE.WebGLRenderer( {alpha: true} );
-const renderer = new THREE.WebGLRenderer( { antialias: (width > 860 ? true : false) } );
+const renderer = new THREE.WebGLRenderer();
 renderer.setPixelRatio( window.devicePixelRatio );
 renderer.setSize( width, height );
 
@@ -39,20 +39,20 @@ scene.add( cube );
 var brainGeo;
 
 //load brain
-// var objLoader = new OBJLoader();
-// objLoader.load(		//load cottage geometry
-	// "./Assets/Models/BrainLogo.obj",
-	// function(object) {
-		// brainGeo = object.children[0];
-		// brainGeo.material = bwMaterial;
-		// console.log( brainGeo.material );
-		// scene.add(brainGeo);
-		// brainGeo.scale.set( 18, 18, 18 );
-		// brainGeo.position.set( -2, 0, 0 );
-		// brainGeo.rotation.order = "YZX";
-		// brainGeo.rotation.set( 0/57.2957795131, 90/57.2957795131, 90/57.2957795131 );
-	// }
-// );
+var objLoader = new OBJLoader();
+objLoader.load(		//load cottage geometry
+	"./Assets/Models/BrainLogo.obj",
+	function(object) {
+		brainGeo = object.children[0];
+		brainGeo.material = bwMaterial;
+		console.log( brainGeo.material );
+		scene.add(brainGeo);
+		brainGeo.scale.set( 18, 18, 18 );
+		brainGeo.position.set( -2, 0, 0 );
+		brainGeo.rotation.order = "YZX";
+		brainGeo.rotation.set( 0/57.2957795131, 90/57.2957795131, 90/57.2957795131 );
+	}
+);
 
 
 
