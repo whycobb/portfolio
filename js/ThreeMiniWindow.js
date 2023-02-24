@@ -1,6 +1,6 @@
 import * as THREE from '/js/three.js-master/build/three.module.js';
 //import * as THREE from 'three';
-//import { OBJLoader } from './js/three.js-master/addons/loaders/OBJLoader.js';
+import { OBJLoader } from './js/three.js-master/examples/jsm/loaders/OBJLoader.js';
 
 var startTime = Date.now();
 
@@ -81,10 +81,10 @@ edgeTex.premultiplyAlpha = false;
 
 			
 let uniforms = {
-	x: { value: 1.0 },
-	t: {value:new THREE.Color(0x558ee6)},
-	m: { value: noiseTex },
-	v: { value: edgeTex }
+	x: { value: 1.0 },										//x->timeMsec
+	t: {value:new THREE.Color(0x558ee6)},	//t->inColor
+	m: { value: noiseTex },								//m->noiseTex
+	v: { value: edgeTex }									//v->edgeTex
 };
 
 var bwMaterial = new THREE.ShaderMaterial( {
