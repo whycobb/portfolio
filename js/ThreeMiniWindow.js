@@ -35,20 +35,20 @@ scene.add( cube );
 
 
 //load brain
-// var objLoader = new OBJLoader();
-// objLoader.load(		//load cottage geometry
-	// "./Assets/Models/BrainLogo.obj",
-	// function(object) {
-		// brainGeo = object.children[0];
-		// brainGeo.material = material;
-		// console.log( brainGeo.material );
-		// scene.add(brainGeo);
-		// brainGeo.scale.set( 4, 4, 4 );
-		// brainGeo.position.set( 0, 0, 0 );
-		// brainGeo.rotation.order = "YZX";
-		// brainGeo.rotation.set( 0/57.2957795131, 90/57.2957795131, 90/57.2957795131 );
-	// }
-// );
+var objLoader = new OBJLoader();
+objLoader.load(		//load cottage geometry
+	"./Assets/Models/BrainLogo.obj",
+	function(object) {
+		brainGeo = object.children[0];
+		brainGeo.material = material;
+		console.log( brainGeo.material );
+		scene.add(brainGeo);
+		brainGeo.scale.set( 4, 4, 4 );
+		brainGeo.position.set( 0, 0, 0 );
+		brainGeo.rotation.order = "YZX";
+		brainGeo.rotation.set( 0/57.2957795131, 90/57.2957795131, 90/57.2957795131 );
+	}
+);
 
 
 
