@@ -38,17 +38,17 @@ myWindow.addEventListener( 'mousedown', onDocumentMouseDown, false );
 
 
 //Set up brainwave shader
-var myTexture = new THREE.TextureLoader().load( 'Noise.png' );
+var myTexture = new THREE.TextureLoader().load( './Images/Textures/Noise.png' );
 myTexture.wrapS = THREE.RepeatWrapping;
 myTexture.wrapT = THREE.RepeatWrapping;
 myTexture.premultiplyAlpha = false;
 
-var brainTex = new THREE.TextureLoader().load( 'BrainEdging.png' );
-brainTex.wrapS = THREE.RepeatWrapping;
-brainTex.wrapT = THREE.RepeatWrapping;
-brainTex.premultiplyAlpha = false;
+// var brainTex = new THREE.TextureLoader().load( 'BrainEdging.png' );
+// brainTex.wrapS = THREE.RepeatWrapping;
+// brainTex.wrapT = THREE.RepeatWrapping;
+// brainTex.premultiplyAlpha = false;
 
-var animGreen = new THREE.TextureLoader().load( 'BrainEdging.png' );
+var animGreen = new THREE.TextureLoader().load( './Images/Textures/BrainEdging.png' );
 animGreen.wrapS = THREE.RepeatWrapping;
 animGreen.wrapT = THREE.RepeatWrapping;
 animGreen.magFilter = THREE.NearestFilter;
