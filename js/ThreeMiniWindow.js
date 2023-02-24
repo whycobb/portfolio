@@ -2,7 +2,7 @@
 //import * as THREE from '../node_modules/three/build/three.module.js';
 import * as THREE from 'three';
 
-import { OBJLoader } from '/js/three.js-master/examples/jsm/loaders/OBJLoader.js';
+import { OBJLoader } from 'three/addons/loaders/OBJLoader.js';
 
 var startTime = Date.now();
 
