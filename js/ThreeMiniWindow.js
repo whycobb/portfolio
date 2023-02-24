@@ -3,10 +3,7 @@ import * as THREE from '../node_modules/three/build/three.module.js';
 
 //import { OBJLoader } from '/js/three.js-master/examples/js/loaders/OBJLoader.js';
 //import { OBJLoader } from '../node_modules/three/examples/jsm/loaders/OBJLoader.js';
-//import { OBJLoader } from '../node_modules/three/addons/loaders/OBJLoader.js';
-
-//import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
-import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+import { OBJLoader } from '../node_modules/three/examples/jsm/loaders/GLTFLoader.js';
 
 var startTime = Date.now();
 
