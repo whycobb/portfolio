@@ -1,4 +1,4 @@
-window.bwvert = `varying vec2 vUv;
+window.bwVert = `varying vec2 vUv;
 
 	void main() {
 		vUv = uv;
@@ -7,7 +7,7 @@ window.bwvert = `varying vec2 vUv;
 		gl_Position = projectionMatrix * modelViewPosition;
 	}`;
 
-window.bwfrag = `#ifdef GL_ES
+window.bwFrag = `#ifdef GL_ES
 	precision mediump float;
 	#endif
 

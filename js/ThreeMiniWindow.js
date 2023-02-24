@@ -35,8 +35,22 @@ scene.add( cube );
 //add click listener
 myWindow.addEventListener( 'mousedown', onDocumentMouseDown, false );
 
-console.log( window.bwfrag );
-console.log( window.bwvert );
+const bwFrag = window.bwFrag;
+const bwVert = window.bwVert;
+
+let uniforms = {
+	u_time: { type: "f", value: 1.0 },
+	u_tex0: { type: "t", value: myTexture },
+	//u_tex1: { type: "t", value: brainTex },
+	u_tex2: { type: "t", value: animGreen },
+	u_mouse: { type: "v2", value: new THREE.Vector2() }
+};
+
+var material = new THREE.ShaderMaterial( {
+	uniforms: uniforms,
+	vertexShader: document.getElementById( 'vertexShader' ).textContent,
+	fragmentShader: document.getElementById( 'fragmentShader' ).textContent
+} );
 
 
 
@@ -77,7 +91,5 @@ function onDocumentMouseDown( event ) {
 	console.log("clickt");
 	console.log(event);
 	
-	
-	console.log( window.bwfrag );
 }
 
