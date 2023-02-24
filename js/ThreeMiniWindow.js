@@ -28,7 +28,7 @@ const camera = new THREE.PerspectiveCamera( 75, width / height, 0.1, 1000 );
 camera.position.z = 5;
 
 //Basic box geometry
-const geometry = new THREE.BoxGeometry( 3, 3, 3 );
+const geometry = new THREE.BoxGeometry( 2, 2, 2 );
 const material = new THREE.MeshBasicMaterial( { color: 0x00ff00 } );
 const cube = new THREE.Mesh( geometry, material );
 cube.position.x = 2;
@@ -45,7 +45,7 @@ objLoader.load(		//load cottage geometry
 		brainGeo.material = bwMaterial;
 		console.log( brainGeo.material );
 		scene.add(brainGeo);
-		brainGeo.scale.set( 10, 10, 10 );
+		brainGeo.scale.set( 18, 18, 18 );
 		brainGeo.position.set( -2, 0, 0 );
 		brainGeo.rotation.order = "YZX";
 		brainGeo.rotation.set( 0/57.2957795131, 90/57.2957795131, 90/57.2957795131 );
