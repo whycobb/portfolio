@@ -9,6 +9,7 @@ Pages/GISTest/
 Pages/Asteroids/
 Images/
 Fonts/
+Assets/
 
 #ignore config to hide logins/keys
 /pb_keys.json
