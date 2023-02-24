@@ -29,14 +29,14 @@ scene.add( cube );
 
 
 //get shaders
-const bwFrag = document.getElementById("bwshader-frag").textContent;
-const bwVert = document.getElementById("bwshader-vert").textContent;
+//const bwFrag = document.getElementById("bwshader-frag").textContent;
+//const bwVert = document.getElementById("bwshader-vert").textContent;
 
 //add click listener
 myWindow.addEventListener( 'mousedown', onDocumentMouseDown, false );
 
-console.log(bwFrag);
-console.log(bwVert);
+console.log(window.bwFrag);
+console.log(window.bwVert);
 
 
 
@@ -78,10 +78,6 @@ function onDocumentMouseDown( event ) {
 	console.log(event);
 	
 	
-	let bwFrag2 = document.getElementById("bwshader-frag").innerHTML;
-	let bwVert2 = document.getElementById("bwshader-vert").innerHTML;
-	
-	console.log(bwFrag2);
-	console.log(bwVert2);
+	console.log( window.bwfrag );
 }
 
