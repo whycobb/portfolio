@@ -42,7 +42,7 @@ objLoader.load(		//load cottage geometry
 	"./Assets/Models/BrainLogo.obj",
 	function(object) {
 		brainGeo = object.children[0];
-		brainGeo.material = material;
+		brainGeo.material = bwMaterial;
 		console.log( brainGeo.material );
 		scene.add(brainGeo);
 		brainGeo.scale.set( 4, 4, 4 );
