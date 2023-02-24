@@ -61,7 +61,7 @@ edgeTex.premultiplyAlpha = false;
 			
 let uniforms = {
 	timeMsec: { value: 1.0 },
-	inColor: {value:new THREE.Color(0xFFFFFF)},
+	inColor: {value:new THREE.Color(0x0000ff)},
 	noiseTex: { value: noiseTex },
 	edgeTex: { value: edgeTex }
 };
