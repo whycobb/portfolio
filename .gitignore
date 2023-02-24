@@ -10,7 +10,10 @@ Pages/Asteroids/
 Images/
 Fonts/
 Assets/
+node_modules/
 
 #ignore config to hide logins/keys
 /pb_keys.json
+/package-lock.json
+/package.json
 
