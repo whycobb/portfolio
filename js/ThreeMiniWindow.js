@@ -13,6 +13,8 @@ var height = myWindow.offsetHeight;
 console.log("myWindow is: ", myWindow);
 console.log("Width is: ", width, "\nHeight is: ", height);
 
+document.getElementById("output").innerText ="hi!";
+
 const renderer = new THREE.WebGLRenderer( {alpha: true} );
 //const renderer = new THREE.WebGLRenderer();
 renderer.setSize( width, height );
