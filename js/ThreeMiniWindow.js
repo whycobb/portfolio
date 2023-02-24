@@ -17,6 +17,7 @@ document.getElementById("output").innerText = ("Render width: " + width + "; hei
 
 const renderer = new THREE.WebGLRenderer( {alpha: true} );
 //const renderer = new THREE.WebGLRenderer();
+renderer.setPixelRatio( window.devicePixelRatio );
 renderer.setSize( width, height );
 
 myWindow.appendChild( renderer.domElement );
@@ -131,8 +132,11 @@ function updateCanvasSize() {
 	renderer.getSize(prevSize);
 	
 	if (width != prevSize.x || height != prevSize.y) {
+		renderer.setPixelRatio( window.devicePixelRatio );
+		
 		//set updateStyle (third arg) to true if you want the new dimensions reflected in your CSS.
 		renderer.setSize(width, height, true);
+		
     camera.aspect = width / height;
     camera.updateProjectionMatrix();
 		document.getElementById("output").innerText = ("Render width: " + width + "; height: " + height);
