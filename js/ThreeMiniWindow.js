@@ -114,6 +114,9 @@ function animate() {
 	cube.rotation.y += 0.0012;
 	cube.rotation.z += 0.0011;
 	
+	brainGeo.rotation.y += 0.001;
+	if (brainGeo.rotation.y >= 3.1415) brainGeo.rotation.y -= 3.1415;
+	
 	uniforms.x.value = (Date.now() - startTime) / 1000;	//x->timeMsec
 	
 	requestAnimationFrame( animate );
