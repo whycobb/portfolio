@@ -116,7 +116,7 @@ function animate() {
 	
 	if (brainGeo) {
 		brainGeo.rotation.y += 0.005;
-		if (brainGeo.rotation.y >= 4.71238898) brainGeo.rotation.y -= 3.1415;
+		if (brainGeo.rotation.y >= 6.28318531) brainGeo.rotation.y -= 3.1415;
 	}
 	
 	uniforms.x.value = (Date.now() - startTime) / 1000;	//x->timeMsec
