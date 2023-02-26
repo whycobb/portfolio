@@ -116,10 +116,7 @@ function animate() {
 	
 	if (brainGeo) {
 		brainGeo.rotation.y += 0.005;
-		if (brainGeo.rotation.y >= 90/57.2957795131) {
-			brainGeo.rotation.y -= 3.1415;
-			console.log("reversing brain");
-		}
+		if (brainGeo.rotation.y >= 90/57.2957795131) brainGeo.rotation.y = -90/57.2957795131;
 	}
 	
 	uniforms.x.value = (Date.now() - startTime) / 1000;	//x->timeMsec
