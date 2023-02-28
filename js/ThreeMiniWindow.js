@@ -118,7 +118,7 @@ function animate() {
 		brainGeo.rotation.y += 0.005;
 		if (brainGeo.rotation.y >= 180/57.2957795131) {
 			brainGeo.rotation.y -= 180/57.2957795131;
-			console.log("Brainflip");
+			//console.log("Brainflip");
 		}
 	}
 	
