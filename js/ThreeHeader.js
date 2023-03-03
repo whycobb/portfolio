@@ -8,7 +8,7 @@ var startTime = Date.now();
 //Get div to attach to
 let myWindow = document.getElementById("headerpanel");
 var width = myWindow.offsetWidth;
-var height = myWindow.offsetHeight;
+var height = myWindow.offsetHeight * 1.7;
 
 console.log("myWindow is: ", myWindow);
 console.log("Width is: ", width, "\nHeight is: ", height);
