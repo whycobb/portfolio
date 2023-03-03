@@ -9,7 +9,7 @@ var startTime = Date.now();
 let myWindow = document.getElementById("headerpanel");
 var width = myWindow.offsetWidth;
 if (width > 850) width = 850;
-var height = myWindow.offsetHeight * 3;
+var height = myWindow.offsetHeight * 2.5;
 if (height > 120) height = 120;
 
 console.log("myWindow is: ", myWindow);
@@ -119,7 +119,7 @@ console.log("ThreeMiniWindow should now be rendering");
 function updateCanvasSize() {
 	width = myWindow.offsetWidth;
 	if (width > 850) width = 850;
-	height = myWindow.offsetHeight * 3;
+	height = myWindow.offsetHeight * 2.5;
 	if (height > 120) height = 120;
 	const prevSize = new THREE.Vector2();
 	renderer.getSize(prevSize);
