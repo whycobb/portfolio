@@ -41,7 +41,7 @@ var brainGeo;
 //load brain
 var objLoader = new OBJLoader();
 objLoader.load(		//load cottage geometry
-	"./Assets/Models/BrainLogo.obj",
+	"./Assets/Header/Geo_Thick.obj",
 	function(object) {
 		brainGeo = object.children[0];
 		brainGeo.material = bwMaterial;
@@ -77,7 +77,7 @@ noiseTex.premultiplyAlpha = false;
 // brainTex.wrapT = THREE.RepeatWrapping;
 // brainTex.premultiplyAlpha = false;
 
-var edgeTex = new THREE.TextureLoader().load( './Assets/Textures/Heavitas_BW_UV.png' );
+var edgeTex = new THREE.TextureLoader().load( './Assets/Header/Heavitas_BW_UV.png' );
 edgeTex.wrapS = THREE.RepeatWrapping;
 edgeTex.wrapT = THREE.RepeatWrapping;
 edgeTex.magFilter = THREE.NearestFilter;
