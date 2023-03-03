@@ -349,7 +349,11 @@ p {
   .rel-header {
 		height: 90px;
 	}
-	
+}
+@media screen and (max-width: 896px) {
+  .rel-header {
+		height: calc( (vw - 46px) / 8.5 );
+	}
 }
 	
 @media screen and (max-width: 480px) {
