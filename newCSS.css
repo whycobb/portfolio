@@ -203,7 +203,7 @@ div.three-mini-window canvas {
 
 div.three-header-window {
   border-radius: 14px;
-	width: fit-content;
+	/* width: fit-content; */
 	height: 40px;
 	/* background: #ff00ff; */
 	margin: auto;
