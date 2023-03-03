@@ -9,7 +9,7 @@ var startTime = Date.now();
 let myWindow = document.getElementById("headerpanel");
 var width = myWindow.offsetWidth;
 if (width > 850) width = 850;
-var height = myWindow.offsetHeight * 1.7;
+var height = myWindow.offsetHeight * 3;
 if (height > 120) height = 120;
 
 console.log("myWindow is: ", myWindow);
