@@ -10,6 +10,7 @@ let myWindow = document.getElementById("headerpanel");
 var width = myWindow.offsetWidth;
 if (width > 850) width = 850;
 var height = myWindow.offsetHeight * 1.7;
+if (width > 120) width = 120;
 
 console.log("myWindow is: ", myWindow);
 console.log("Width is: ", width, "\nHeight is: ", height);
@@ -119,6 +120,7 @@ function updateCanvasSize() {
 	width = myWindow.offsetWidth;
 	if (width > 850) width = 850;
 	height = myWindow.offsetHeight;
+	if (width > 120) width = 120;
 	const prevSize = new THREE.Vector2();
 	renderer.getSize(prevSize);
 	
