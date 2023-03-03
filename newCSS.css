@@ -352,7 +352,7 @@ p {
 }
 @media screen and (max-width: 896px) {
   .rel-header {
-		height: calc( (vw - 46px) / 8.5 );
+		height: calc( 11.76vw - 10px );
 	}
 }
 	
