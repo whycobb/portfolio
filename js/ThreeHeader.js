@@ -29,13 +29,6 @@ const scene = new THREE.Scene();
 const camera = new THREE.PerspectiveCamera( 75, width / height, 0.1, 1000 );
 camera.position.z = 4;
 
-//Basic box geometry
-const geometry = new THREE.BoxGeometry( 2, 2, 2 );
-const material = new THREE.MeshBasicMaterial( { color: 0x00ff00 } );
-const cube = new THREE.Mesh( geometry, material );
-cube.position.x = 20;
-scene.add( cube );
-
 var brainGeo;
 
 //load brain
@@ -98,9 +91,6 @@ var bwMaterial = new THREE.ShaderMaterial( {
 	vertexShader: window.bwVert,
 	fragmentShader: window.bwFrag
 } );
-
-cube.material = bwMaterial;
-cube.material.needsUpdate = true;
 
 
 
