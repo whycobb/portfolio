@@ -33,7 +33,7 @@ camera.position.z = 4;
 const geometry = new THREE.BoxGeometry( 2, 2, 2 );
 const material = new THREE.MeshBasicMaterial( { color: 0x00ff00 } );
 const cube = new THREE.Mesh( geometry, material );
-cube.position.x = 20;
+cube.position.x = 2;
 scene.add( cube );
 
 var brainGeo;
