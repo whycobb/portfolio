@@ -77,7 +77,7 @@ noiseTex.premultiplyAlpha = false;
 // brainTex.wrapT = THREE.RepeatWrapping;
 // brainTex.premultiplyAlpha = false;
 
-var edgeTex = new THREE.TextureLoader().load( './Assets/Textures/YorickEdging_Small.png' );
+var edgeTex = new THREE.TextureLoader().load( './Assets/Textures/YorickBrainwave.png' );
 edgeTex.wrapS = THREE.RepeatWrapping;
 edgeTex.wrapT = THREE.RepeatWrapping;
 edgeTex.magFilter = THREE.NearestFilter;
