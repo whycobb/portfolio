@@ -57,7 +57,7 @@ window.bwFrag = `#ifdef GL_ES
 		brightness += texture2D(edgeTex, vUv).r * 0.5 + 0.2;
 
 		vec2 rim = texture2D(edgeTex, vUv).gb;
-		brightness += pow(mod(rim.x - (timeMsec / 2.0), 1.0) * rim.y, 4.0);	//this is where the magic happens?
+		brightness += pow(mod(rim.x - timeMsec / 1.0, 1.0) * rim.y, 4.0);	//this is where the magic happens?
 
 
 
