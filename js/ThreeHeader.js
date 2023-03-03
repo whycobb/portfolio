@@ -46,7 +46,7 @@ objLoader.load(		//load cottage geometry
 		console.log( brainGeo.material );
 		scene.add(brainGeo);
 		brainGeo.scale.set( 9, 9, 1 );
-		brainGeo.position.set( 0, 0, 0 );
+		brainGeo.position.set( 0, 0.1, 0 );
 		brainGeo.rotation.order = "YZX";
 		brainGeo.rotation.set( 0/57.2957795131, 0/57.2957795131, 0/57.2957795131 );
 	}
