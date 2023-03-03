@@ -210,8 +210,8 @@ div.three-header-window {
 	width: 60%;
 	height: 40px;
 	/* background: #ff00ff; */
-	padding-left: auto;
-	padding-right: auto;
+	margin-left: auto;
+	margin-right: auto;
 	display: block;
 	overflow: visible;
 }
