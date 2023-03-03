@@ -94,9 +94,6 @@ a:visited {
   /* justify-content: center; */
   /* display: flex; */
   /* flex-direction: row-reverse; */
-	max-width: 850px;
-	margin-left: auto;
-	margin-right: auto;
   background-color: #3299FF;
   position: relative;
 	white-space: nowrap;
