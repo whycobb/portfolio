@@ -347,7 +347,7 @@ p {
 	}
 	
   .rel-header {
-		height: fit-content;
+		height: 100px;
 	}
 	
 }
