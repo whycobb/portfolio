@@ -114,6 +114,7 @@ console.log("ThreeMiniWindow should now be rendering");
 
 function updateCanvasSize() {
 	width = myWindow.offsetWidth;
+	if (width > 850) width = 850;
 	height = myWindow.offsetHeight;
 	const prevSize = new THREE.Vector2();
 	renderer.getSize(prevSize);
