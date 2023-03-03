@@ -213,8 +213,8 @@ div.three-header-window {
 }
 
 div.three-header-window canvas {
-	padding-left: auto;
-	padding-right: auto;
+	margin-left: auto;
+	margin-right: auto;
 	display: block;
 }
 
