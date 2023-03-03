@@ -207,6 +207,7 @@ div.three-mini-window canvas {
 div.three-header-window {
   border-radius: 14px;
 	/* width: fit-content; */
+	width: 60%;
 	height: 40px;
 	/* background: #ff00ff; */
 	padding-left: auto;
