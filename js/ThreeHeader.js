@@ -6,7 +6,7 @@ import { OBJLoader } from 'three/addons/loaders/OBJLoader.js';
 var startTime = Date.now();
 
 //Get div to attach to
-let myWindow = document.getElementById("window1");
+let myWindow = document.getElementById("headerpanel");
 var width = myWindow.offsetWidth;
 var height = myWindow.offsetHeight;
 
