@@ -21,8 +21,8 @@ const renderer = new THREE.WebGLRenderer( {alpha: true} );
 renderer.setPixelRatio( window.devicePixelRatio );
 renderer.setSize( width, height );
 
-renderer.canvas.style['margin-left'] = 'auto';
-renderer.canvas.style['margin-right'] = 'auto';
+//renderer.canvas.style['margin-left'] = 'auto';
+//renderer.canvas.style['margin-right'] = 'auto';
 
 myWindow.appendChild( renderer.domElement );
 
