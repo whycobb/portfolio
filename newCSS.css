@@ -342,11 +342,11 @@ p {
 
 /* Queries */
 @media screen and (max-width: 1350px) {
-  .rel-header {
+	.three-header-window {
 		height: fit-content;
 	}
 	
-	.three-header-window {
+  .rel-header {
 		height: fit-content;
 	}
 	
