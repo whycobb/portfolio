@@ -50,7 +50,7 @@ objLoader.load(		//load cottage geometry
 		brainGeo.scale.set( 1, 1, 1 );
 		brainGeo.position.set( 0, 0, 0 );
 		brainGeo.rotation.order = "YZX";
-		brainGeo.rotation.set( 0/57.2957795131, 0/57.2957795131, 90/57.2957795131 );
+		brainGeo.rotation.set( 0/57.2957795131, 0/57.2957795131, 0/57.2957795131 );
 	}
 );
 
