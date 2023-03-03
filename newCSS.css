@@ -343,7 +343,7 @@ p {
 /* Queries */
 @media screen and (max-width: 1350px) {
   .rel-header {
-		height: 90px;
+		height: fit-content;
 	}
 	
 }
