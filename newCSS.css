@@ -201,6 +201,9 @@ div.three-mini-window canvas {
 	display: block;
 }
 
+
+
+
 div.three-header-window {
   border-radius: 14px;
 	/* width: fit-content; */
@@ -217,6 +220,10 @@ div.three-header-window canvas {
 	margin-right: auto;
 	display: block;
 }
+
+
+
+
 
 div.art-links {
   min-width: 80px;
@@ -333,9 +340,9 @@ p {
 
 
 /* Queries */
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1350px) {
   .rel-header {
-		height: fit-content;
+		height: 100px;
 	}
 	
 }
