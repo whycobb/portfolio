@@ -209,7 +209,7 @@ div.three-header-window {
 	padding-left: auto;
 	padding-right: auto;
 	display: block;
-	overflow: hidden;
+	overflow: visible;
 }
 
 div.three-header-window canvas {
