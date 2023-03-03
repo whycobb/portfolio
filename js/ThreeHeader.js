@@ -121,6 +121,7 @@ function updateCanvasSize() {
 	if (width > 850) width = 850;
 	height = myWindow.offsetHeight * 2.5;
 	if (height > 120) height = 120;
+	if (height > (width / 8.5)) height = width/8.5;
 	const prevSize = new THREE.Vector2();
 	renderer.getSize(prevSize);
 	
