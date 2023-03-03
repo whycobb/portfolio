@@ -115,7 +115,7 @@ function animate() {
 	cube.rotation.z += 0.0011;
 	
 	if (brainGeo) {
-		brainGeo.rotation.y += 0.005;
+		brainGeo.rotation.y += 0.00; //5;
 		if (brainGeo.rotation.y >= 90/57.2957795131) {
 			brainGeo.rotation.y -= 180/57.2957795131;
 			//console.log("Brainflip");
