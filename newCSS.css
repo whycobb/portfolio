@@ -95,8 +95,8 @@ a:visited {
   /* display: flex; */
   /* flex-direction: row-reverse; */
 	max-width: 850px;
-	padding-left: auto;
-	padding-right: auto;
+	margin-left: auto;
+	margin-right: auto;
   background-color: #3299FF;
   position: relative;
 	white-space: nowrap;
