@@ -77,7 +77,7 @@ noiseTex.premultiplyAlpha = false;
 // brainTex.wrapT = THREE.RepeatWrapping;
 // brainTex.premultiplyAlpha = false;
 
-var edgeTex = new THREE.TextureLoader().load( './Assets/Textures/Heavitas_BW.png' );
+var edgeTex = new THREE.TextureLoader().load( './Assets/Textures/Heavitas_BW_UV.png' );
 edgeTex.wrapS = THREE.RepeatWrapping;
 edgeTex.wrapT = THREE.RepeatWrapping;
 edgeTex.magFilter = THREE.NearestFilter;
