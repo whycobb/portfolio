@@ -39,7 +39,7 @@ var brainGeo;
 //load brain
 var objLoader = new OBJLoader();
 objLoader.load(		//load cottage geometry
-	"./Assets/Header/Geo_Thin.obj",
+	"./Assets/Header/Geo_Flat.obj",
 	function(object) {
 		brainGeo = object.children[0];
 		brainGeo.material = bwMaterial;
