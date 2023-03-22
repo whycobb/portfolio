@@ -201,6 +201,31 @@ div.three-mini-window canvas {
 	display: block;
 }
 
+
+
+
+div.three-header-window {
+  border-radius: 14px;
+	/* width: fit-content; */
+	width: 95%;
+	height: 40px;
+	/* background: #ff00ff; */
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	overflow: visible;
+}
+
+div.three-header-window canvas {
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+
+
+
+
+
 div.art-links {
   min-width: 80px;
   min-height: 80px;
@@ -316,11 +341,19 @@ p {
 
 
 /* Queries */
-@media screen and (max-width: 1200px) {
-  .rel-header {
+@media screen and (max-width: 1350px) {
+	.three-header-window {
 		height: fit-content;
 	}
 	
+  .rel-header {
+		height: 90px;
+	}
+}
+@media screen and (max-width: 896px) {
+  .rel-header {
+		height: calc( 11.76vw - 10px );
+	}
 }
 	
 @media screen and (max-width: 480px) {

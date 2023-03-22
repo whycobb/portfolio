@@ -56,12 +56,12 @@ window.bwFrag = `#ifdef GL_ES
 		//or add a ring around the geometry with a mask
 		brightness += texture2D(edgeTex, vUv).r * 0.5 + 0.2;
 
-		vec2 bawa = texture2D(edgeTex, vUv).gb;	//what the hell is bawa
-		brightness += pow(mod(bawa.x - timeMsec / 1.0, 1.0) * bawa.y, 4.0);
+		vec2 rim = texture2D(edgeTex, vUv).gb;
+		brightness += pow(mod(rim.x - timeMsec / 1.0, 1.0) * rim.y, 4.0);	//this is where the magic happens?
 
 
 
-		//brightness = floor(bawa.x + timeMsec / 1.0) * 2.0 * bawa.y;
+		//brightness = floor(rim.x + timeMsec / 1.0) * 2.0 * rim.y;
 
 
 		//bring in color, modulated by brightness, for the shader output

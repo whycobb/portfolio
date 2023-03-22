@@ -6,19 +6,24 @@ import { OBJLoader } from 'three/addons/loaders/OBJLoader.js';
 var startTime = Date.now();
 
 //Get div to attach to
-let myWindow = document.getElementById("window1");
+let myWindow = document.getElementById("headerpanel");
 var width = myWindow.offsetWidth;
-var height = myWindow.offsetHeight;
+if (width > 850) width = 850;
+var height = myWindow.offsetHeight * 2.5;
+if (height > 120) height = 120;
 
 console.log("myWindow is: ", myWindow);
 console.log("Width is: ", width, "\nHeight is: ", height);
 
 document.getElementById("output").innerText = ("Render width: " + width + "; height: " + height);
 
-//const renderer = new THREE.WebGLRenderer( {alpha: true} );
-const renderer = new THREE.WebGLRenderer( { antialias: (width > 860 ? true : false) } );
+const renderer = new THREE.WebGLRenderer( {alpha: true, antialias: (width > 500)} );
+//const renderer = new THREE.WebGLRenderer( { antialias: (width > 860 ? true : false) } );
 renderer.setPixelRatio( window.devicePixelRatio );
 renderer.setSize( width, height );
+
+//renderer.canvas.style['margin-left'] = 'auto';
+//renderer.canvas.style['margin-right'] = 'auto';
 
 myWindow.appendChild( renderer.domElement );
 
@@ -28,13 +33,6 @@ const scene = new THREE.Scene();
 //Camera
 const camera = new THREE.PerspectiveCamera( 75, width / height, 0.1, 1000 );
 camera.position.z = 4;
-
-//Basic box geometry
-const geometry = new THREE.BoxGeometry( 2, 2, 2 );
-const material = new THREE.MeshBasicMaterial( { color: 0x00ff00 } );
-const cube = new THREE.Mesh( geometry, material );
-cube.position.x = 20;
-scene.add( cube );
 
 var brainGeo;
 
@@ -47,8 +45,8 @@ objLoader.load(		//load cottage geometry
 		brainGeo.material = bwMaterial;
 		console.log( brainGeo.material );
 		scene.add(brainGeo);
-		brainGeo.scale.set( 1.8, 1.8, 1.8 );
-		brainGeo.position.set( 0, 0, 0 );
+		brainGeo.scale.set( 9, 9, 0.01 );
+		brainGeo.position.set( 0, 0.1, 0 );
 		brainGeo.rotation.order = "YZX";
 		brainGeo.rotation.set( 0/57.2957795131, 0/57.2957795131, 0/57.2957795131 );
 	}
@@ -77,7 +75,7 @@ noiseTex.premultiplyAlpha = false;
 // brainTex.wrapT = THREE.RepeatWrapping;
 // brainTex.premultiplyAlpha = false;
 
-var edgeTex = new THREE.TextureLoader().load( './Assets/Header/Heavitas_BW_UV.png' );
+var edgeTex = new THREE.TextureLoader().load( './Assets/Header/Un_tinied/Heavitas_BW_UV_512.png' );
 edgeTex.wrapS = THREE.RepeatWrapping;
 edgeTex.wrapT = THREE.RepeatWrapping;
 edgeTex.magFilter = THREE.NearestFilter;
@@ -99,9 +97,6 @@ var bwMaterial = new THREE.ShaderMaterial( {
 	fragmentShader: window.bwFrag
 } );
 
-cube.material = bwMaterial;
-cube.material.needsUpdate = true;
-
 
 
 
@@ -109,18 +104,6 @@ console.log("ThreeMiniWindow is running!");
 
 function animate() {
 	updateCanvasSize();
-	
-	cube.rotation.x += 0.001;
-	cube.rotation.y += 0.0012;
-	cube.rotation.z += 0.0011;
-	
-	if (brainGeo) {
-		brainGeo.rotation.y += 0.00; //5;
-		if (brainGeo.rotation.y >= 90/57.2957795131) {
-			brainGeo.rotation.y -= 180/57.2957795131;
-			//console.log("Brainflip");
-		}
-	}
 	
 	uniforms.x.value = (Date.now() - startTime) / 1000;	//x->timeMsec
 	
@@ -135,7 +118,10 @@ console.log("ThreeMiniWindow should now be rendering");
 
 function updateCanvasSize() {
 	width = myWindow.offsetWidth;
-	height = myWindow.offsetHeight;
+	if (width > 850) width = 850;
+	height = myWindow.offsetHeight * 2.5;
+	if (height > 120) height = 120;
+	if (height > (width / 8.5)) height = width/8.5;
 	const prevSize = new THREE.Vector2();
 	renderer.getSize(prevSize);
 	
