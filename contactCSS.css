@@ -5,15 +5,17 @@
 
 
 body {
-	background-color: #DEA747;
+	/* background-color: #DEA747; */
+	background-color: #000000;
 }
 
 
 @supports not (-webkit-overflow-scrolling: touch) {	/* iOS lies about supporting background-attachment and I would like to see Apple answer for this sin */
 	body {
-		background: linear-gradient(45deg, #B50300, #E63A37, #E63A37, #B50300);
-		background-size: 120% 120%;
-		background-attachment: fixed;
+		/* background: linear-gradient(45deg, #B50300, #E63A37, #E63A37, #B50300); */
+		/* background-size: 120% 120%; */
+		/* background-attachment: fixed; */
+		background: #000000;
 	}
 }
 
@@ -28,21 +30,23 @@ h2 {
 }
 
 a {
-	color: #38D994;
+	color: #d99438;
 }
 
 a:hover {
 }
 
 a:visited {
-	color: #088C54;
+	/* color: #088C54; */
+	color: #8C5408;
 }
 
 .rel-container {
 }
 
 .rel-header {
-  background-color: #C70300;
+  /* background-color: #C70300; */
+  background-color: #000000;
 }
 
 /* Container for the whole page, flexed as a column */
@@ -61,8 +65,10 @@ a:visited {
 div.sticky {
  /* align-items: center;*/
 
-	box-shadow: 0 6px 5px #67000080;
-  background-color: #C70300;
+	/* box-shadow: 0 6px 5px #67000080; */
+	box-shadow: 0 6px 5px #67370080;
+  /* background-color: #C70300; */
+  background-color: #000000;
 }
 
 div.top-bar-category {
@@ -78,7 +84,7 @@ div.top-bar-category:hover {
 }
 
 div.art-links {
-  background: #7bbdee;
+  background: #bdee7b;
 }
 
 div#gamecontainer {
@@ -106,7 +112,9 @@ div.page-link p {
 }
 
 div.text-body {
-	background-color: #87030030;
+	/* background-color: #87030030; */
+	background-color: #000000;
+	box-shadow: 0 2px 10px #67370080;
 }
 
 p {
