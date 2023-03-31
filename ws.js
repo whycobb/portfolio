@@ -14,7 +14,11 @@ http.createServer(function(request, response) {
     //  response.writeHead(404, {"Content-Type": "text/plain"});
     //  response.write("404 Not Found\n");
     //  response.end();
-			filename = '/404.html';
+			fs.readFile('404.html', "binary", function(err, file) {
+				response.writeHead(404, {'Content-Type': 'text/html'});
+				response.write(data);
+				response.end();
+			});
       return;
     }
 
