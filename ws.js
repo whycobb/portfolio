@@ -11,14 +11,9 @@ http.createServer(function(request, response) {
   
   fs.exists(filename, function(exists) {
     if(!exists) {
-    //  response.writeHead(404, {"Content-Type": "text/plain"});
-    //  response.write("404 Not Found\n");
-    //  response.end();
-			fs.readFile('404.html', "binary", function(err, file) {
-				response.writeHead(404, {'Content-Type': 'text/html'});
-				response.write(data);
-				response.end();
-			});
+      response.writeHead(404, {"Content-Type": "text/plain"});
+      response.write("404 Not Found\n");
+      response.end();
       return;
     }
 
