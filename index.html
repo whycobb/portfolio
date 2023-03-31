@@ -1,223 +1,107 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>WebXR Workspace</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style>
-      html {
-        font-size: 14px;
-      }
-      body {
-        background: rgb(50, 153, 255);
-        color: #fff;
-        font: normal 500 1.2rem/1.2 Inconsolata, Andale Mono, Courier New, monospace;
-        padding: 1rem 2rem;
-      }
-      ul {
-        list-style: none;
-        margin: 0;
-        padding: 0;
-      }
-      .header {
-        position: relative;
-      }
-      .resources {
-        font-size: 0;  /* Collapse whitespace. */
-        text-transform: uppercase;
-      }
-      .resources li + li {
-        margin-top: 0.5rem;
-      }
-      .resources a {
-        color: rgba(0,0,0,.5);
-        display: inline-block;
-        font-size: 1.2rem;
-        margin: -0.25rem -0.5rem;
-        padding: 0.25rem 0.5rem;
-        text-decoration: none;
-        transition: all 0.075s ease-in-out;
-      }
-      .resources a:hover {
-        background-color: rgba(0,0,0,0.25);
-        color: #fff;
-      }
-      h1,
-      h2 {
-        line-height: 100%;
-      }
-      h1 {
-        font-size: 1.6rem;
-        font-weight: 100;
-        letter-spacing: 0.04rem;
-        margin-bottom: 1.25rem;
-        text-transform: uppercase;
-      }
-      h2 {
-        color: rgba(0,0,0,0.5);
-        font-size: 1.1rem;
-        font-weight: 700;
-        margin: 2rem 0 0.5rem;
-        padding: 0;
-        text-transform: uppercase;
-      }
-      hr {
-        background: none;
-        border: 0;
-        border-bottom: 1px dashed rgba(255,255,255,0.25);
-        margin: 2rem 0;
-      }
-      .links li + li {
-        box-shadow: inset 0 0.15rem 0.1rem -0.15rem rgba(0,0,0,0.5);
-      }
-      .links a.bad {
-        color: #f80;
-        display: block;
-        font-size: 1.5rem;
-        letter-spacing: 0.01em;
-        padding: 0.75rem 0;
-        text-decoration: line-through;
-        transition: opacity 0.075s ease-in-out;
-      }
-      .links a {
-        color: #fff;
-        display: block;
-        font-size: 1.5rem;
-        letter-spacing: 0.01em;
-        padding: 0.75rem 0;
-        text-decoration: none;
-        transition: opacity 0.075s ease-in-out;
-      }
-      .links a em {
-        font-size: .9rem;
-        font-style: normal;
-        opacity: .6;
-      }
-      .links a:hover {
-        background-color: rgba(0,0,0,0.15);
-        box-shadow: inset 0 0 0 0.15rem rgba(0,0,0,0.15);
-      }
-      .links a:active {
-        background-color: rgba(0,0,0,0.25);
-        opacity: 0.75;
-      }
-      .links li:hover,
-      .links li:hover + li {
-        margin: 0 -0.75rem;
-      }
-      .links li:hover a,
-      .links li:hover + li a {
-        padding-left: 0.75rem;
-        padding-right: 0.75rem;
-      }
-      @media only screen and (min-width: 1000px) {
-        h1 {
-          font-size: 3rem;
-        }
-        .resources {
-          font-size: 1.2;
-        }
-        .resources li {
-          display: inline-block;
-        }
-        .resources li + li {
-          margin-left: 2.5rem;
-        }
-      }
-    </style>
-  </head>
-  <body>
-    <header class="header">
-		<h1>Yorick's Prototype Web Site</h1>
-		<h2>Under Heavy Construction</h2>
-    </header>
-	
-	<hr>
-	
-	<h2>New Index</h2>
-    <ul class="links">
-		<li><a href="newIndex.html">New Index</a></li>
-		<li><a href="art.html">Art Page</a></li>
-		<li><a href="coding.html">Coding Page</a></li>
-		<li><a href="contact.html">Contact Page</a></li>
-		<li><a href="fvc.html">FVC Page</a></li>
-	</ul>
-	<hr>
-	
-	<h2>Current</h2>
-    <ul class="links">
-		<li><a href="Pages/GISTest/">GIS Experimentation</a></li>
-		<li><a href="Pages/MapshaderTest/">Map Shader Experimentation</a></li>
-		<li><a href="Pages/Asteroids/">Asteroids Clone</a></li>
-	</ul>
-	<hr>
-	
-	<h2>Core</h2>
-    <ul class="links">
-		<li><a href="Assets/">Assets Directory</a></li>
-		<li><a href="Pages/AAA_blankproj_0-9-2/">Blank Project - AFrame Release 0.9.2</a></li>
-		<li><a href="Pages/AAA_blankproj_1-0-0/">Blank Project - AFrame Release 1.0.0</a></li>
-		<li><a href="Pages/AAA_blankproj_Three112/">Blank Project - THREE.js Release 112</a></li>
-		<li><a href="Pages/AAA_blankproj_Three129/">Blank Project - THREE.js Release 129</a></li>
-	</ul>
-	<hr>
-	
-	<h2>Environments</h2>
-    <ul class="links">
-		<li><a href="Pages/bar/">Bar Scan</a></li>
-		<li><a href="Pages/BraincaveRedux/">Braincave Office 2.0</a></li>
-		<li><a href="Pages/NolaSpace/">Cafe Nola Space</a></li>
-		<li><a href="Pages/FITCIOffice/">FITCI Office</a></li>
-		<li><a href="Pages/GenericConfRoom/">Generic Conference Room</a></li>
-		<li><a href="Pages/GymTest/">Gymnasium</a></li>
-		<li><a href="Pages/Hangar/">Hangar Space</a></li>
-		<li><a class="bad" href="myTests/ServerRoomTest/">Server Room</a></li>
-    </ul>
-	<hr>
-	
-	<h2>Assets</h2>
-    <ul class="links">
-		<li><a href="Pages/FrederickMapTest/">Frederick County Map</a></li>
-		<li><a href="Pages/PMREMmer/">PMREM Pre-Generator and Loader</a></li>
-		<li><a href="Pages/Gizmos/">VR Gizmos</a></li>
-    </ul>
-	<hr>
-	
-	<h2>Shaders</h2>
-    <ul class="links">
-		<li><a class="bad" href="myTests/EntryShaderGrounds/">Entry Room Shader</a></li>
-		<li><a class="bad" href="pages/GridShader/">Grid Shader</a></li>
-		<li><a href="Pages/OutlineShader/">Outline Shader (vertex along normal)</a></li>
-		<li><a class="bad" href="myTests/PortalShader/">Portal Shader</a></li>
-    </ul>
-	<hr>
-	
-	<h2>Experiments</h2>
-    <ul class="links">
-		<li><a href="Pages/AOTest/">Ambient Occlusion on .OBJ Models</a></li>
-		<li><a href="Pages/AvatarExperiments/">Avatar Material Experiments</a></li>
-		<li><a href="Pages/BPCEMtest/">Box-Projected Cube Environment Mapping</a> Three 112</li>
-		<li><a class="bad" href="myTests/ThreeJSLightVolumeTest/">Light Volume Test (Naive Illumination)</a></li>
-		<li><a class="bad" href="myTests/TeleportBlockerTest/">Teleport Blocker Test</a></li>
-		<li><a href="Pages/ThreeJSResTest/">Texture Resolution and Clarity Tests</a></li>
-		<li><a class="bad" href="myTests/ThreeJS_NoBatching/">THREE.js No-Batching Performance Test</a></li>
-		<li><a class="bad" href="myTests/ThreeJSPlaneTest/">THREE.js Plane Performance Test</a></li>
-		<li><a class="bad" href="myTests/ThreeJSOrder/">THREE.js Render Order Test</a></li>
-	</ul>
-	
-	<hr>
-	
-	<h2>Junk/Old</h2>
-    <ul class="links">
-		<li><a class="bad" href="myTests/BraincaveDemo/">Braincave Office 1.0</a></li>
-		<li><a class="bad" href="myTests/cubetest/">Cube Test</a></li>
-		<li><a class="bad" href="Pages/FITCItest/">FITCI Office Test</a></li>
-		<li><a class="bad" href="myTests/HDRITest/">HDRI Test (+ working video)</a></li>
-		<li><a class="bad" href="myTests/linetest/">Outline Test</a></li>
-		<li><a class="bad" href="myTests/ShaderTest/">Shader Test (?????)</a></li>
-		<li><a class="bad" href="myTests/ThreeJSTest/">THREE.js Test</a></li>
-		<li><a class="bad" href="myTests/UILook/">UI Look Test</a></li>
-    </ul>
-	
-  </body>
+<html>
+
+
+<head>
+	<script async src="https://ga.jspm.io/npm:es-module-shims@1.6.3/dist/es-module-shims.js"></script>
+
+	<script type="importmap">
+		{
+			"imports": {
+				"three": "./js/three.js-master/build/three.module.js",
+				"three/addons/": "./js/three.js-master/examples/jsm/"
+			}
+		}
+	</script>
+		
+	<meta name="theme-color" content="#3299FF" media="(prefers-color-scheme: light)">
+	<meta name="theme-color" content="#3299FF" media="(prefers-color-scheme: dark)">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="newCSS.css">
+	<link rel="icon" type="image/x-icon" href="favicon.ico" />
+	<script src="https://kit.fontawesome.com/8451e61da8.js" crossorigin="anonymous"></script>
+	<title>Yorick C</title>
+</head>
+
+<body>
+		<div class="rel-header">
+			<div class="three-header-window" id="headerpanel"></div>
+			<!-- <h1 style="width: fit-content">YORICK COBB</h1> -->
+			<!-- Zimbra-bold font c/o fontbundles.net by way of dafont.com; provided free for non-commercial use. -->
+		</div>
+		
+	<div class="mega-flex">
+				
+		<div class="sticky">
+			<!-- <div class="rel-container"> -->
+				<div class="flex-container-2">
+					<div class="top-bar-category">
+						<a href="art.html">ART</a>
+					</div>
+					<div class="top-bar-category">
+						<a href="coding.html">SOFTWARE</a>
+					</div>
+					<div class="top-bar-category">
+						<a href="contact.html">CONTACT</a>
+					</div>
+				</div>
+			<!-- </div> -->
+
+
+		</div>
+
+		<div class="text-body">
+			<p id="output">placeholder</p>
+				
+			<p>
+				The NCAA Division I men's basketball tournament, branded as NCAA March Madness and commonly called March Madness, is
+				a single-elimination tournament played each spring in the United States, currently featuring 68 college basketball
+				teams from the Division I level of the National Collegiate Athletic Association (NCAA), to determine the national
+				championship. The tournament was created in 1939 by the National Association of Basketball Coaches, and was the idea
+				of Ohio State coach Harold Olsen. Played mostly during March, it has become one of the biggest annual sporting
+				events in the United States.
+			</p>
+			
+			<p>
+				And nobody even watches it anymore, they're too busy with their damn Game Cubes! Because of these guys:
+			</p>
+			
+			<p>
+				Chikorita, Bayleef, Meganium, Cyndaquil, Quilava, Typhlosion, Totodile, Croconaw, Feraligatr, Sentret, Furret,
+				Hoothoot, Noctowl, Ledyba, Ledian, Spinarak, Ariados, Crobat, Chinchou, Lanturn, Pichu, Cleffa, Igglybuff, Togepi,
+				Togetic, Natu, Xatu, Mareep, Flaaffy, Ampharos, Bellossom, Marill, Azumarill, Sudowoodo, Politoed, Hoppip, Skiploom,
+				Jumpluff, Aipom, Sunkern, Sunflora, Yanma, Wooper, Quagsire, Espeon, Umbreon, Murkrow, Slowking, Misdreavus, Unown,
+				Wobbuffet, Girafarig, Pineco, Forretress, Dunsparce, Gligar, Steelix, Snubbull, Granbull, Qwilfish, Scizor, Shuckle,
+				Heracross, Sneasel, Teddiursa, Ursaring, Slugma, Magcargo, Swinub, Piloswine, Corsola, Remoraid, Octillery, Delibird,
+				Mantine, Skarmory, Houndour, Houndoom, Kingdra, Phanpy, Donphan, Porygon2, Stantler, Smeargle, Tyrogue, Hitmontop,
+				Smoochum, Elekid, Magby, Miltank, Blissey, Raikou, Entei, Suicune, Larvitar, Pupitar, Tyranitar, Lugia, Ho-Oh, and Celebi
+			</p>
+
+			<p>
+				Some of this text c/o wikipedia dot org.
+			</p>
+			
+			<p>
+				Old index <a href="index.html" style="text-decoration: underline;">here</a>
+			</p>
+		</div>
+
+		<div class="flex-container">
+			<div class="art-links">This part</div>
+			<div class="art-links">will be</div>
+			<div class="art-links">removed</div>
+		</div>
+		
+		<p>
+			Under heavy construction.
+			<i class="fa-solid fa-person-digging" style="color:orange;"></i>
+		</p>
+	</div>
+</body>
+		
+		
+<script src="./shaders/brainwave_shader.js"></script>
+
+<script type="module" src="./js/ThreeHeader.js"></script>
+
 </html>
