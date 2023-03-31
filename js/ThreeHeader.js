@@ -15,7 +15,7 @@ if (height > 120) height = 120;
 console.log("myWindow is: ", myWindow);
 console.log("Width is: ", width, "\nHeight is: ", height);
 
-document.getElementById("output").innerText = ("Render width: " + width + "; height: " + height);
+//document.getElementById("output").innerText = ("Render width: " + width + "; height: " + height);
 
 const renderer = new THREE.WebGLRenderer( {alpha: true, antialias: (width > 500)} );
 //const renderer = new THREE.WebGLRenderer( { antialias: (width > 860 ? true : false) } );
@@ -133,7 +133,7 @@ function updateCanvasSize() {
 		
     camera.aspect = width / height;
     camera.updateProjectionMatrix();
-		document.getElementById("output").innerText = ("Render width: " + width + "; height: " + height);
+//		document.getElementById("output").innerText = ("Render width: " + width + "; height: " + height);
 	}
 }
 

@@ -57,6 +57,7 @@ html {
 #site { overflow: hidden; }
 
 h1 {
+	font-family: lucida console;
   color: white;
   text-align: center;
 	margin: auto;
@@ -320,6 +321,7 @@ div.text-body {
 	padding-bottom: 1vw;
   border-radius: 14px;
 	background-color: #0000ff20;
+	overflow: hidden;
 	
 	/* outline-style:double; */
 	/* outline-color:#ffffff40; */
@@ -337,6 +339,58 @@ p {
 	/* width: 70%; */
 	line-height: 1.2;
 }
+
+
+.inline-sample {
+  width: calc(100% + 7vw);
+  position: relative;
+  left: 50%;
+  right: 50%;
+  /* margin-left: -56.5%; */
+  /* margin-right: -43.5%; */
+  margin-left: calc(-50% - 3.5vw);
+  margin-right: calc(-50% + 3.5vw);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.inline-sample.right-pic {
+  flex-direction: row-reverse;
+}
+
+.inline-picture {
+  width: 60%;
+	margin-bottom: 10px;
+}
+
+.inline-picture img {
+  max-width: 100%;
+	display: block;
+}
+
+.inline-picture.left img {
+	border-radius: 0px 15px 15px 0px;
+}
+
+.inline-picture.right img {
+	border-radius: 15px 0px 0px 15px;
+}
+
+.inline-blurb {
+  width: 35%;
+	margin: auto;
+  margin-bottom: 15px;
+}
+
+@media (max-width: 768px) {
+  .inline-picture,
+  .inline-blurb {
+    width: 90%;
+  }
+}
+
+
 
 
 
