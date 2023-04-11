@@ -395,6 +395,12 @@ p {
 
 
 /* Queries */
+@media screen and (min-width: 2222px) {
+	div.page-link {
+		margin-left: 66px;
+		margin-right: 66px;
+	}
+}
 @media screen and (max-width: 1350px) {
 	.three-header-window {
 		height: fit-content;
