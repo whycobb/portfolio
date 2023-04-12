@@ -77,11 +77,12 @@ a {
 
 a:hover {
 	opacity: 1;
+	color: #ffaa88;
 }
 
 a:visited {
   text-decoration: none;
-	color: #ff8800;
+	color: #ff9944;
 }
 
 .rel-container {
