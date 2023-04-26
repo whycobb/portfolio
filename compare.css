@@ -32,7 +32,7 @@ img.wftoggle {
   font-weight: bold;
   font-size: 40px;
   right: 0;
-  border-radius: 0 0 0 15px;
+  border-radius: 0 15px 0 15px;
   user-select: none;
   -webkit-user-select: none;
 	z-index: 10;
