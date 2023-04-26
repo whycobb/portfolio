@@ -47,7 +47,7 @@
 
 		<div class="text-body">
 			<div class="carousel-holder">
-				<div class="carousel-label">Braincave Home Office</div>
+				<div class="carousel-label" style="z-index: 5">Braincave Home Office</div>
 				<!-- Slide 1 -->
 				<div class="carousel-slide compare">
 					<div class="slide-number">1 / 6</div>
@@ -111,6 +111,9 @@
 				<i class="fa-solid fa-circle-chevron-left prev" onclick="plusSlides(-1)"></i>
 				<i class="fa-solid fa-circle-chevron-right next" onclick="plusSlides(1)"></i>
 				
+				<!-- Wireframe Toggle -->
+				<img class="wftoggle" src="Images/Icons/wireframeicon_128.png" onclick="togglewf()" title="Toggle between rendered and wireframe views"></img>
+				
 			</div>
 		
 			<p>
@@ -139,6 +142,7 @@
 		</p>
 	</div>
 	<script src="carousel.js"></script>
+	<script src="compare.js"></script>
 	
 </body>
 

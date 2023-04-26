@@ -14,7 +14,42 @@ img.compare-overlay {
 }
 
 img.compare-overlay:hover {
-	opacity: 100%;
+	/* opacity: 100%; */
+}
+
+img.wftoggle {
+  background-color: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  position: absolute;
+  top: 48px;
+  width: 80px;
+  padding: 12px;
+  margin-top: -50px;
+	opacity: 80%;
+  color: #ffffff80;
+  font-weight: bold;
+  font-size: 40px;
+  right: 0;
+  border-radius: 0 0 0 15px;
+  user-select: none;
+  -webkit-user-select: none;
+	z-index: 10;
+}
+
+img.wftoggle:hover {
+	opacity:100%;
+}
+
+.img-compare-slider {
+  position: absolute;
+  z-index: 11;
+  cursor: ew-resize;
+  /*set the appearance of the slider:*/
+  width: 40px;
+  height: 40px;
+  background-color: #2196F3;
+  opacity: 0.7;
+  border-radius: 50%;
 }
 
 
