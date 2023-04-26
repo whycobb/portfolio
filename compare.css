@@ -1,0 +1,27 @@
+img.compare-img {
+  /* width: 50%; */
+	overflow: hidden;
+  position: absolute;
+	opacity: 100%;
+}
+
+img.compare-overlay {
+	/* width: 10%; */
+	position: relative;
+	/* margin-left: 300px; */
+	opacity: 0%;
+	transition: all 0.5s ease-in-out;
+}
+
+img.compare-overlay:hover {
+	opacity: 100%;
+}
+
+
+
+@media screen and (max-width: 480px) {
+	.carousel-label {
+		font-size: 5vw;
+	}
+}
+
