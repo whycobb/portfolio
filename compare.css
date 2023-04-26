@@ -35,7 +35,7 @@ img.wftoggle {
   border-radius: 0 15px 0 15px;
   user-select: none;
   -webkit-user-select: none;
-	z-index: 10;
+	z-index: 4;
 }
 
 img.wftoggle:hover {
@@ -63,6 +63,7 @@ img.wftoggle:hover {
 	
 	img.wftoggle {
 		padding: 2.5vw;
+		top: calc(  (10% + 25.vw) * 0.5 );
 	}
 }
 
