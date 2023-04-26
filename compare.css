@@ -11,6 +11,7 @@ img.compare-overlay {
 	/* margin-left: 300px; */
 	opacity: 0%;
 	transition: all 0.5s ease-in-out;
+	pointer-events: none;
 }
 
 img.compare-overlay:hover {
@@ -23,6 +24,7 @@ img.wftoggle {
   position: absolute;
   top: 48px;
   width: 80px;
+	max-width: 10%;
   padding: 12px;
   margin-top: -50px;
 	opacity: 80%;
@@ -57,6 +59,10 @@ img.wftoggle:hover {
 @media screen and (max-width: 480px) {
 	.carousel-label {
 		font-size: 5vw;
+	}
+	
+	img.wftoggle {
+		padding: 2.5vw;
 	}
 }
 
