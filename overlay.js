@@ -1,8 +1,8 @@
 var overlays = [];
 var overlaid = false;
 
-function togglewf() {
-	if(overlays.length ==0) {
+function toggleOverlay() {
+	if(overlays.length == 0) {
 		overlays = document.getElementsByClassName("compare-overlay");
 	}
 	if(overlays.length > 0) {
