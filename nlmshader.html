@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+	<meta name="theme-color" content="#3299FF" media="(prefers-color-scheme: light)">
+	<meta name="theme-color" content="#3299FF" media="(prefers-color-scheme: dark)">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="newCSS.css">
+	<link rel="stylesheet" href="carousel.css">
+	<script src="https://kit.fontawesome.com/8451e61da8.js" crossorigin="anonymous"></script>
+	<link rel="icon" type="image/x-icon" href="favicon.ico" />
+	<title>Yorick C</title>
+</head>
+
+<body>
+		<!-- <div class="rel-header"> -->
+			<!-- <h1><a href="newIndex.html"><== Back</a></h1> -->
+		<!-- </div> -->
+		
+	<div class="mega-flex">
+				
+		<div class="sticky">
+			<!-- <div class="rel-container"> -->
+				<div class="flex-container-2">
+					<div class="top-bar-category">
+						<a href="index.html">HOME</a>
+					</div>
+					<div class="top-bar-category">
+						|
+					</div>
+					<div class="top-bar-category">
+						<a href="art.html">ART</a>
+					</div>
+					<div class="top-bar-category">
+						<a href="coding.html">SOFTWARE</a>
+					</div>
+					<div class="top-bar-category">
+						<a href="contact.html">CONTACT</a>
+					</div>
+				</div>
+			<!-- </div> -->
+
+
+		</div>
+
+		<div class="text-body">
+			<!-- key image goes here -->
+		
+		
+		
+			<p>
+				
+				<br><br>
+				(Nice render, probably the pic of all assets in one space?)
+				<br><br>
+				This is a lightweight, extremely performant shader that I built during my internship with the National
+				Library of Medicine in 2018. It operates a little like a conventional 'matcap' shader (short for
+				'material capture') which samples a pre-lit sphere based on surface normals, but splits the pre-rendered
+				lighting into four channels - one each for glossy diffuse, glossy specular, rough diffuse, and rough specular.
+				Like a conventional matcap, it is able to efficiently imitate an arbitrarily complex lighting setup, but it
+				does so while retaining fairly robust texture options for artists.
+				<br><br>
+				(RGBAMix png and the split channels)
+				<br><br>
+				This shader is just as fast as Unity's basic 'Bumped spec 1 light' mobile shader but provides an attractive
+				sylized look with the illusion of rich lighting. Unity's fully-PBR Standard Shader <i>can</i> far outperform
+				my matcap shader, but it does so at a tremendous performance cost on mobile hardware.
+				<br><br>
+				(comparison here)
+				<br><br>
+				The material is simple to set up. It uses only two textures: a base map (with optional alpha roughness) and
+				a tangent-space normal map. The material artist can configure colors for lights and shadows, which the shader
+				interpolates between based on brightness. Lighting data, in the form of a four-channel matcap, can be either
+				hand-drawn or rendered out from any 3D modeling package, requiring only a little technical know-how to set up
+				the RGBA channels correctly.
+				<br><br>
+				(Maybe a demonstration of the Maya->Unity lighting process?)
+			</p>
+		</div>
+		
+		<p>
+			Under heavy construction.
+			<i class="fa-solid fa-person-digging" style="color:orange;"></i>
+		</p>
+	</div>
+	<script src="carousel.js"></script>
+	
+</body>
+
+</html>

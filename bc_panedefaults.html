@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+	<meta name="theme-color" content="#3299FF" media="(prefers-color-scheme: light)">
+	<meta name="theme-color" content="#3299FF" media="(prefers-color-scheme: dark)">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="newCSS.css">
+	<link rel="stylesheet" href="carousel.css">
+	<script src="https://kit.fontawesome.com/8451e61da8.js" crossorigin="anonymous"></script>
+	<link rel="icon" type="image/x-icon" href="favicon.ico" />
+	<title>Yorick C</title>
+</head>
+
+<body>
+		<!-- <div class="rel-header"> -->
+			<!-- <h1><a href="newIndex.html"><== Back</a></h1> -->
+		<!-- </div> -->
+		
+	<div class="mega-flex">
+				
+		<div class="sticky">
+			<!-- <div class="rel-container"> -->
+				<div class="flex-container-2">
+					<div class="top-bar-category">
+						<a href="index.html">HOME</a>
+					</div>
+					<div class="top-bar-category">
+						|
+					</div>
+					<div class="top-bar-category">
+						<a href="art.html">ART</a>
+					</div>
+					<div class="top-bar-category">
+						<a href="coding.html">SOFTWARE</a>
+					</div>
+					<div class="top-bar-category">
+						<a href="contact.html">CONTACT</a>
+					</div>
+				</div>
+			<!-- </div> -->
+
+
+		</div>
+
+		<div class="text-body">
+			<!-- key image goes here -->
+		
+			
+			<h1 style="margin-top: 5pt">Pane Interface</h1>
+			<p style="text-align: center; margin-top: 1pt">A user-friendly, configurable interface for tables in the BraincaveXR platform.</p>
+			
+			<img  style="width:calc(100% + 7vw); position: relative; left: 50%; right: 50%; margin-left: calc(-50% - 3.5vw);" src="Images/PaneDefaults/PaneInterface_Main.png">
+			
+		
+			<p>
+				(Screenshot of the window system)
+				<br><br>
+				The BraincaveXR platform was intended for enterprise use and our roadmap included robust tools
+				for working with data in virtual reality. Behind the scenes, this meant we had to reinvent a
+				lot of wheels. Just to achieve basic functionality, we needed to implement a text system in 3D
+				space, work out the sizes of that text, work out margins and padding, implement CSS-style layout
+				tools, you name it. And then, on top of it all, if the scriptwriter wants to <i>do</i> anything
+				with a table, they have to understand the complex system of object-space position references,
+				child-parent hierarchies, and nested scale transforms that we had built.
+				<br><br>
+				Enter my Pane Interface system. I was responsible for building an interface component that could
+				be applied to any table and bring it to life with basic functionality. Internally, we had been
+				referring to tables' container objects as "panes" all along, and building a "window" system around
+				these "panes" was a no-brainer. Har har. The problem was that our various use cases, and our
+				sometimes-clunky scripting language, meant every pane was built differently. Simply putting controls
+				inside a pane wouldn't work - some panes had strange internal rotations or non-unifom scaling and
+				just didn't behave when you wanted them to.
+				<br><br>
+				The solution was to set my interface outside of the panes, and then marry them in world-space.
+				Relying on a number of other tools I'd already built, chiefly Mesh Utils for bounding box and
+				spatial math, the Pane Interface was able to reach out of its pane and inject itself into the scene
+				graph at the environment level. This key innovation allows it to scale the table however it wants,
+				collapse it entirely, resize itself dynamically based on bounding boxes, rotate the table cleanly,
+				and generally be completely agnostic towards the individual table's internal makeup.
+				<br><br>
+				This was the last feature I developed before Braincave's closure. I would have liked to refine its
+				appearance more, but I am proud to have built such a robust and practical tool.
+			</p>
+		</div>
+		
+		<p>
+			Under heavy construction.
+			<i class="fa-solid fa-person-digging" style="color:orange;"></i>
+		</p>
+	</div>
+	
+</body>
+
+</html>
