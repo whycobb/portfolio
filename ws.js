@@ -4,7 +4,11 @@ var http = require('http'),
 
 http.createServer(function (request, response) {
   response.writeHead(200, {'Content-Type': 'text/html'});
-  response.write("Current date + time: " + dt.getDateTime() + "; URL was '" + request.url + "'");
+	
+	var q = url.parse(request.url, true).query;
+	var txt = q.year + " " + q.month;
+	
+  response.write("Current date + time: " + dt.getDateTime() + "; URL was '" + request.url + "'\n" + txt);
 	response.end();
 }).listen(parseInt(port, 10)); 
 
