@@ -5,6 +5,11 @@ var http = require('http'),
 
 
 http.createServer(function (request, response) {
+	fs.appendFile('./Logs/serverLog.log', 'Hiii\n', function (err) {
+		if (err) throw err;
+		console.log('Saved!');
+	});
+	
 	fs.readFile('index.html', function(err, data) {
 		response.writeHead(200, {'Content-Type': 'text/html'});
 		response.write(data);
