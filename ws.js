@@ -21,14 +21,14 @@ http.createServer(function(request, response) {
 					return;
 				}
 				
-				       //404 page not working - fallback to plaintext 404 error
-					response.writeHead(404, {"Content-Type": "text/plain"});
-					response.write("404 Not Found\n");
-					response.end();
-					return;
+		//		       //404 page not working - fallback to plaintext 404 error
+		//			response.writeHead(404, {"Content-Type": "text/plain"});
+		//			response.write("404 Not Found\n");
+		//			response.end();
+		//			return;
 				
 				//Now we can assume the 404 html loaded fine and is ready to send
-				response.writeHead(404, {"Content-Type": text/html});
+				response.writeHead(404, {"Content-Type": "text/html"});
 				response.write(file, "binary");
 				response.end();
 				return;
