@@ -11,27 +11,16 @@ http.createServer(function(request, response) {
   
   fs.exists(filename, function(exists) {	//'exists' is a variable passed into this inline-defined callback function
     if(!exists) {	//404 case
-			
-			//Instruct fs to read a different file; our 404 page
-			fs.readFile("404.html", "binary", function(err, file) {
-				if(err) {        //404 page not working - fallback to plaintext 404 error
-					response.writeHead(404, {"Content-Type": "text/plain"});
-					response.write("404 Not Found\n");
-					response.end();
-					return;
-				}
-				
-				//Now we can assume the 404 html loaded fine and is ready to send
-				response.writeHead(200, {"Content-Type": text/html});
-				response.write(file, "binary");
-				response.end();
-			});
+      response.writeHead(404, {"Content-Type": "text/plain"});
+      response.write("404 Not Found\n");
+      response.end();
+      return;
     }
 
     if (fs.statSync(filename).isDirectory()) filename += '/index.html';		//if the url is a directory, look for index.html inside
 
     fs.readFile(filename, "binary", function(err, file) {	//file is passed in from the read function
-      if(err) {        //catch-all error meaning "something broke inside the server"
+      if(err) {        //catch-all error meaning "something broke insidethe server"
         response.writeHead(500, {"Content-Type": "text/plain"});
         response.write(err + "\n");
         response.end();
