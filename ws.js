@@ -1,11 +1,12 @@
 var http = require('http'),
+		url = require('url'),
 		fs = require('fs'),
 		dt = require('./ycDTModule.js'),
 		port = process.argv[2] || 1178;
 
 
 http.createServer(function (request, response) {
-	fs.appendFile('./Logs/serverLog.log', 'Hiii\n', function (err) {
+	fs.appendFile('./Logs/serverLog.log', dt.getDateTime() + ' -- Hiii ' + request.construtor.name + '\n', function (err) {
 		if (err) throw err;
 		console.log('Saved!');
 	});
