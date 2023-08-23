@@ -6,7 +6,7 @@ var http = require('http'),
 
 
 http.createServer(function (request, response) {
-	fs.appendFile('./Logs/serverLog.log', dt.getDateTime() + ' -- Hiii\n', function (err) {
+	fs.appendFile('./Logs/serverLog.log', "--" + dt.getDateTime() + " -- Hiii\n", function (err) {
 		if (err) throw err;
 		console.log('Saved!');
 	});
